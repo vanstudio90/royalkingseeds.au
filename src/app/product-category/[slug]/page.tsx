@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return { title: 'Category Not Found' };
 
   return {
-    title: content?.h1 || `${category.name} — Buy Online USA`,
-    description: content?.intro?.slice(0, 160) || `Shop ${category.name} online with discreet US shipping. Premium cannabis seed genetics from Royal King Seeds.`,
+    title: content?.h1 || `${category.name} — Buy Online Australia`,
+    description: content?.intro?.slice(0, 160) || `Shop ${category.name} online with discreet Australia-wide shipping. Premium cannabis seed genetics from Royal King Seeds.`,
     alternates: {
       canonical: `https://royalkingseeds.au/product-category/${slug}`,
     },

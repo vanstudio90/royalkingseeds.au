@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const type = product.autoflower ? 'Autoflower' : product.feminized ? 'Feminized' : '';
   // Strip any "| Royal King Seeds..." suffix from engine-generated metaTitle (template adds it)
-  const rawTitle = product.metaTitle || `${product.name} Seeds — Buy Online USA`;
+  const rawTitle = product.metaTitle || `${product.name} Seeds — Buy Online Australia`;
   const title = rawTitle.replace(/\s*\|\s*Royal King Seeds.*$/i, '').trim();
   const description = product.metaDescription || product.shortDescription || product.description.replace(/##[^\n]*/g, '').slice(0, 155).trim() + '...';
   const canonical = `https://royalkingseeds.au/${product.slug}`;

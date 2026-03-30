@@ -230,10 +230,10 @@ export function generateFAQs(product: Product): FAQ[] {
       a: `Under optimal conditions, ${name} produces ${specs.yieldIndoor} indoors and ${specs.yieldOutdoor} outdoors. ${product.autoflower ? 'As an autoflower, yields are somewhat lower than photoperiod versions, but the fast turnaround allows for multiple harvests per Canadian growing season.' : 'Maximizing yield requires proper lighting (18/6 veg, 12/12 flower), adequate nutrition, and training techniques like topping or SCROG.'} Australian growers report best results with consistent environment control and quality nutrients.`,
     },
     {
-      q: `Can I grow ${name} outdoors in the USA?`,
+      q: `Can I grow ${name} outdoors in Australia?`,
       a: product.autoflower
-        ? `Absolutely. ${name} autoflower seeds thrive outdoors across the United States thanks to their automatic flowering and fast lifecycle. They can be planted from late May through July and still finish before fall frost. Growers in California, New York, and even shorter-season provinces like Colorado and Michigan have reported successful outdoor harvests.`
-        : `Yes, ${name} can be grown outdoors in the USA, particularly in provinces with longer growing seasons like California and southern New York. Seeds should be started indoors in April-May and transplanted after the last frost. Harvest typically falls ${specs.harvest}. In shorter-season provinces, consider starting earlier indoors or using a greenhouse to extend the season.`,
+        ? `Absolutely. ${name} autoflower seeds thrive outdoors across Australia thanks to their automatic flowering and fast lifecycle. They can be planted from October through January and still finish before autumn arrives. Growers in Queensland, New South Wales, and even cooler regions like Victoria and Tasmania have reported successful outdoor harvests.`
+        : `Yes, ${name} can be grown outdoors in Australia, particularly in regions with longer growing seasons like Queensland and the Northern Territory. Seeds should be started indoors in September-October and transplanted after the last frost. Harvest typically falls ${specs.harvest}. In cooler southern regions, consider starting earlier indoors or using a greenhouse to extend the season.`,
     },
     {
       q: `What does ${name} taste and smell like?`,
@@ -250,8 +250,8 @@ export function generateFAQs(product: Product): FAQ[] {
         : `${name} has a flowering period of ${specs.floweringTime} when grown under a 12/12 light cycle. Add 4-6 weeks of vegetative growth for a total indoor cycle of approximately 12-16 weeks. For outdoor Australian growers, flowering begins naturally as daylight hours decrease in late summer, with harvest typically falling ${specs.harvest}.`,
     },
     {
-      q: `Is ${name} legal to grow in the USA?`,
-      a: `Yes. Under applicable state law, adults can legally purchase cannabis seeds and grow up to 4 plants per household for personal use in most provinces. ${name} ${type} seeds can be legally purchased, shipped, and cultivated across the United States. Royal King Seeds ships all orders discreetly from within the United States with full tracking.`,
+      q: `Is ${name} legal to grow in Australia?`,
+      a: `Cannabis seed laws vary by state and territory in Australia. The ACT permits limited personal cultivation for adults. In other states and territories, seeds are sold as collector items and for genetic preservation. ${name} ${type} seeds can be purchased and shipped discreetly Australia-wide. Buyers are responsible for understanding their local regulations. Royal King Seeds ships all orders discreetly with full tracking.`,
     },
     {
       q: `What is the THC content of ${name}?`,

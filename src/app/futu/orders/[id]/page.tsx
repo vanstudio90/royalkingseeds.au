@@ -408,7 +408,7 @@ export default function OrderDetailPage() {
             <div>
               <p className="store-name" style={{ fontSize: 20, fontWeight: 'bold', color: '#275C53', margin: 0 }}>Royal King Seeds</p>
               <p className="store-address" style={{ fontSize: 12, color: '#999', margin: '2px 0 0' }}>royalkingseeds.au</p>
-              <p className="store-address" style={{ fontSize: 12, color: '#999', margin: '2px 0 0' }}>United States</p>
+              <p className="store-address" style={{ fontSize: 12, color: '#999', margin: '2px 0 0' }}>Australia</p>
             </div>
           </div>
           <div className="invoice-title" style={{ textAlign: 'right' }}>
