@@ -150,28 +150,28 @@ const productFaqs: Record<string, { q: string; a: string }[]> = {
     { q: 'Is it practical to cultivate all three strains in one tent?', a: 'It is, though be mindful that each strain may exhibit slightly different growth rates and final heights. Applying LST and topping will help you achieve a level canopy. All three share compatible environmental requirements.' },
   ],
   'goat-mixpack': [
-    { q: 'Why is it called the G.O.A.T Pack?', a: 'G.O.A.T stands for Greatest Of All Time. The pack includes Acapulco Gold (legendary sativa), 9 Pound Hammer (devastating indica), and Maui Pineapple Chunk (tropical hybrid) — three strains that represent the absolute best of their respective categories.' },
-    { q: 'Will all three strains grow to the same height?', a: 'No. Acapulco Gold grows taller with sativa structure, 9 Pound Hammer stays compact as an indica, and Maui Pineapple Chunk falls in between. This variety makes the pack an excellent learning experience but requires some canopy management.' },
-    { q: 'Which strain in the pack is the most potent?', a: '9 Pound Hammer is typically the most potent, delivering heavy indica effects that live up to its name. Acapulco Gold offers potent sativa cerebral effects, while Maui Pineapple Chunk provides balanced potency.' },
-    { q: 'Are all three strains feminized?', a: 'Yes. Every seed in the G.O.A.T Pack is feminized, ensuring all plants produce flowers. This eliminates the need to identify and remove male plants.' },
-    { q: 'What is the best way to grow three different strains together?', a: 'Use training techniques (topping, LST) to manage height differences. Consider starting the sativa-leaning Acapulco Gold a week later to compensate for its taller growth. All three share similar light and nutrient requirements.' },
-    { q: 'Is this pack good for beginners?', a: 'The G.O.A.T Pack is best suited for growers with some experience, as managing three different strain types requires basic understanding of plant structure and training. However, all three strains are fundamentally robust and forgiving.' },
+    { q: 'What does G.O.A.T stand for in this pack\'s name?', a: 'Greatest Of All Time. The collection comprises Acapulco Gold (iconic sativa), 9 Pound Hammer (formidable indica), and Maui Pineapple Chunk (tropical hybrid) — three cultivars embodying the pinnacle of their respective categories.' },
+    { q: 'Do the three strains reach similar heights?', a: 'They differ notably. Acapulco Gold stretches taller with its sativa architecture, 9 Pound Hammer stays squat as a pure indica, and Maui Pineapple Chunk lands somewhere in between. This diversity offers a terrific learning opportunity but calls for some canopy management.' },
+    { q: 'Which strain in the G.O.A.T Pack hits hardest?', a: '9 Pound Hammer typically takes the crown for potency, producing the heavy indica effects its name implies. Acapulco Gold delivers powerful cerebral stimulation on the sativa side, while Maui Pineapple Chunk sits in balanced territory.' },
+    { q: 'Are all seeds in the G.O.A.T Pack feminised?', a: 'Yes — every seed is feminised, so all plants will develop flowers. There is no need to screen for or discard male plants.' },
+    { q: 'Any tips for cultivating three different strains in one space?', a: 'Employ training methods like topping and LST to even out height discrepancies. Planting the sativa-leaning Acapulco Gold a week after the others can help compensate for its taller growth habit. All three share comparable lighting and nutrient demands.' },
+    { q: 'Is the G.O.A.T Pack appropriate for less experienced growers?', a: 'It is better suited to cultivators with at least some prior experience, since juggling three distinct strain types calls for a basic grasp of plant structure and training. That said, each variety is inherently resilient and forgiving of minor mistakes.' },
   ],
   'american-strains-pack': [
-    { q: 'What strains are in the American Strains Pack?', a: 'The pack includes Blue Dream Autoflower (California classic), Green Crack (renamed by Snoop Dogg), and Alaskan Thunder Fuck (1970s Matanuska Valley legend). Together they represent the diversity and innovation of American cannabis breeding.' },
-    { q: 'Does this pack include both autoflower and photoperiod seeds?', a: 'Yes. Blue Dream is an autoflower variety for faster harvests, while Green Crack and Alaskan Thunder Fuck are photoperiod strains. This mix gives you flexibility in growing schedules and techniques.' },
-    { q: 'Are these strains good for daytime use?', a: 'Yes. All three strains lean toward energizing, uplifting effects. Blue Dream offers gentle balanced stimulation, Green Crack delivers intense energy, and ATF provides clear-headed potency. This is a daytime-focused pack.' },
-    { q: 'Can I grow the autoflower and photoperiod seeds together?', a: 'Yes, but keep in mind that Blue Dream Auto will flower regardless of light cycle, while Green Crack and ATF need 12/12 to flower. You can grow them in the same space if you are okay with the auto finishing first.' },
-    { q: 'What makes Green Crack so energizing?', a: 'Green Crack is a Skunk #1 phenotype selected specifically for its intense cerebral stimulation. High concentrations of terpinolene and limonene contribute to its sharp, energizing effects. Snoop Dogg renamed it for a reason.' },
-    { q: 'How do these strains perform in Canadian climates?', a: 'All three adapt well to Canadian growing conditions. Blue Dream Auto finishes quickly for shorter seasons. Green Crack and ATF perform best indoors or in warmer states like BC and New York with longer summer days.' },
+    { q: 'Which cultivars are included in the American Strains Pack?', a: 'You get Blue Dream Autoflower (a Californian staple), Green Crack (famously renamed by Snoop Dogg), and Alaskan Thunder Fuck (a 1970s Matanuska Valley legend). Together they showcase the range and ingenuity of American cannabis breeding.' },
+    { q: 'Does this pack contain a mix of autoflower and photoperiod seeds?', a: 'It does. Blue Dream is an autoflowering variety for quicker turnarounds, while Green Crack and Alaskan Thunder Fuck are photoperiod strains. This blend provides flexibility across different growing schedules and methods.' },
+    { q: 'Are these strains oriented towards daytime consumption?', a: 'All three lean towards energising, uplifting effects. Blue Dream provides gentle, balanced stimulation; Green Crack delivers intense cerebral energy; and ATF offers clear-headed potency. This is firmly a daytime-focused collection.' },
+    { q: 'Is it feasible to grow the auto and photoperiod seeds side by side?', a: 'It is, though note that Blue Dream Auto will commence flowering regardless of light schedule, while Green Crack and ATF require a 12/12 switch. Growing them together works if you are comfortable harvesting the autoflower first.' },
+    { q: 'What gives Green Crack its famously energising character?', a: 'Green Crack is a Skunk #1 phenotype specifically chosen for its powerful cerebral stimulation. Elevated levels of terpinolene and limonene fuel its sharp, invigorating effects. Snoop Dogg bestowed the name for good reason.' },
+    { q: 'How well do these strains adapt to Australian growing conditions?', a: 'All three transition smoothly to Australian environments. Blue Dream Auto finishes rapidly, ideal for regions with shorter warm seasons. Green Crack and ATF perform best indoors or in warmer states like Queensland and Western Australia where long summer daylight hours support robust vegetative growth.' },
   ],
   'deadly-sativas-mixpack': [
-    { q: 'Why is it called the Deadly Sativas Mixpack?', a: 'Deadly refers to the potency and intensity of the cerebral effects. These three strains — Alice In Wonderland, Amnesia Haze Auto, and Panama Red — deliver some of the most powerful sativa experiences available.' },
-    { q: 'Are these strains too strong for beginners?', a: 'The intense cerebral effects may be overwhelming for new cannabis users. We recommend starting with small amounts if you are not experienced with sativa strains. However, growing the plants themselves is manageable for growers with basic knowledge.' },
-    { q: 'How tall do sativa plants grow?', a: 'Sativa plants naturally grow taller than indicas. Indoor growers should plan for 4-7 feet of height and use training techniques like topping and LST to manage vertical growth. The Amnesia Haze Auto will stay more compact.' },
-    { q: 'Which strain in the pack flowers fastest?', a: 'Amnesia Haze Auto finishes fastest since it is an autoflowering variety. Alice In Wonderland and Panama Red are photoperiod sativas that typically require longer flowering periods of 10-12+ weeks.' },
-    { q: 'What are the effects of sativa strains?', a: 'Sativa strains primarily deliver cerebral effects: mental clarity, creative stimulation, mood elevation, social energy, and focused awareness. They are the opposite of heavy indica body sedation.' },
-    { q: 'Is the Deadly Sativas pack good for creative people?', a: 'Absolutely. All three strains are known for enhancing creativity and mental engagement. Artists, musicians, writers, and anyone seeking inspiration often prefer sativa varieties for their stimulating, mind-expanding effects.' },
+    { q: 'What does "Deadly" refer to in this pack\'s name?', a: 'It refers to the potency and sheer intensity of the cerebral effects. Alice In Wonderland, Amnesia Haze Auto, and Panama Red together deliver some of the most powerful sativa experiences you can find in seed form.' },
+    { q: 'Might these strains overwhelm less experienced users?', a: 'The intense cerebral stimulation can be a lot for cannabis newcomers. Starting with modest amounts is advisable if strong sativa effects are unfamiliar territory for you. On the cultivation side, however, the plants themselves are manageable for anyone with foundational growing knowledge.' },
+    { q: 'What height should I plan for with sativa-dominant plants?', a: 'Sativas naturally grow taller than their indica counterparts. Indoor cultivators should budget for 120-210cm of vertical space and employ techniques like topping and LST to rein in height. The Amnesia Haze Auto will remain more compact than the photoperiod varieties.' },
+    { q: 'Which of the three strains reaches harvest first?', a: 'Amnesia Haze Auto crosses the finish line fastest thanks to its autoflowering genetics. Alice In Wonderland and Panama Red are photoperiod sativas whose flowering stages typically stretch to 10-12 weeks or beyond.' },
+    { q: 'How do sativa effects differ from indica effects?', a: 'Sativa cultivars deliver predominantly cerebral effects — heightened mental clarity, creative spark, elevated mood, social vitality, and sharpened focus. They sit at the opposite end of the spectrum from the heavy physical sedation associated with indica strains.' },
+    { q: 'Is the Deadly Sativas pack a good fit for creatively minded users?', a: 'Without a doubt. All three cultivars are renowned for amplifying creativity and mental engagement. Artists, musicians, writers, and anyone chasing inspiration frequently gravitate towards sativa genetics for their stimulating, perspective-broadening qualities.' },
   ],
 };
 type Tab = typeof tabs[number];
@@ -383,16 +383,16 @@ export function ProductDetail({
           {/* Trust badges */}
           <div className="mt-6 grid grid-cols-3 gap-3">
             <div className="bg-[#275C53]/5 rounded-xl p-3 text-center">
-              <span className="text-lg block mb-1">🇺🇸</span>
-              <span className="text-[10px] uppercase tracking-[1px] text-[#275C53] font-semibold">Free Shipping</span>
+              <span className="text-lg block mb-1">🇦🇺</span>
+              <span className="text-[10px] uppercase tracking-[1px] text-[#275C53] font-semibold">Free AU Delivery</span>
             </div>
             <div className="bg-[#275C53]/5 rounded-xl p-3 text-center">
               <span className="text-lg block mb-1">🌱</span>
-              <span className="text-[10px] uppercase tracking-[1px] text-[#275C53] font-semibold">Germination Guarantee</span>
+              <span className="text-[10px] uppercase tracking-[1px] text-[#275C53] font-semibold">Germination Promise</span>
             </div>
             <div className="bg-[#275C53]/5 rounded-xl p-3 text-center">
               <span className="text-lg block mb-1">🔒</span>
-              <span className="text-[10px] uppercase tracking-[1px] text-[#275C53] font-semibold">Discreet Packaging</span>
+              <span className="text-[10px] uppercase tracking-[1px] text-[#275C53] font-semibold">Unmarked Packaging</span>
             </div>
           </div>
         </div>
@@ -500,7 +500,7 @@ export function ProductDetail({
                           </div>
                         </div>
                         <div className="text-[5px] text-white/30 uppercase tracking-wider text-center">
-                          Premium Canadian Genetics
+                          Premium Genetics
                         </div>
                       </div>
                       {/* Callout lines - left side */}
@@ -543,7 +543,7 @@ export function ProductDetail({
                           <span className="text-[5px] text-white/60 uppercase tracking-wider">Resealable +</span>
                         </div>
                         <div className="text-[4px] text-white/40 mt-5 leading-relaxed text-center px-2">
-                          Royal King Seeds sells seeds for souvenir and collectible purposes. Cannabis seeds are legal to purchase in Australia under the applicable law. Customers are responsible for understanding local laws.
+                          Royal King Seeds supplies seeds as adult novelty collectibles and for genetic preservation. Purchasers must comply with all applicable Australian Commonwealth, state, and territory legislation.
                         </div>
                         <div className="bg-white rounded-lg p-2 w-[140px]">
                           <div className="flex items-center gap-1 mb-1">
@@ -669,7 +669,7 @@ export function ProductDetail({
                         </span>
                       ))}
                     </div>
-                    <p className="text-white/50 text-[12px] mt-3">Terpenes work together through the &quot;entourage effect&quot; — enhancing and modulating the overall cannabis experience beyond THC alone.</p>
+                    <p className="text-white/50 text-[12px] mt-3">Terpenes collaborate via the &quot;entourage effect&quot; — amplifying and fine-tuning the overall cannabis experience well beyond what THC achieves on its own.</p>
                   </div>
                 </div>
               ) : (
@@ -699,23 +699,23 @@ export function ProductDetail({
               </div>
 
               <div className="bg-[#F5F0EA] rounded-2xl p-6 mt-6">
-                <h3 className="text-sm font-bold text-[#275C53] uppercase tracking-[1px] mb-3">Growing Tips for Canadian Growers</h3>
+                <h3 className="text-sm font-bold text-[#275C53] uppercase tracking-[1px] mb-3">Cultivation Tips for Australian Growers</h3>
                 <ul className="space-y-3 text-[14px] text-[#192026]/60">
-                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">1.</span> Start seeds indoors using the paper towel method at 22-26°C for best germination rates.</li>
-                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">2.</span> {product.autoflower ? 'Plant directly in final container to avoid transplant stress.' : 'Transplant seedlings after 2-3 weeks once root system is established.'}</li>
-                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">3.</span> Maintain good airflow to prevent mold, especially in humid Canadian summers.</li>
-                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">4.</span> {product.autoflower ? 'No need to change light cycles — autoflowers flower based on age, not light.' : 'Switch to 12/12 light cycle when plants reach desired height to trigger flowering.'}</li>
-                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">5.</span> Harvest when trichomes are mostly cloudy with some amber for optimal potency and effect.</li>
+                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">1.</span> Germinate seeds indoors using the paper towel technique at 22-26°C for the best strike rate.</li>
+                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">2.</span> {product.autoflower ? 'Sow directly into the final pot to sidestep transplant shock.' : 'Transplant seedlings after 2-3 weeks once the root system is well established.'}</li>
+                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">3.</span> Ensure strong airflow to guard against mould, particularly during humid Australian summers.</li>
+                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">4.</span> {product.autoflower ? 'No lighting changes required — autoflowers bloom based on maturity, not photoperiod.' : 'Flip to a 12/12 light schedule once plants reach your target height to initiate flowering.'}</li>
+                  <li className="flex gap-2"><span className="text-[#D7B65D] shrink-0">5.</span> Harvest when trichomes are predominantly cloudy with a fraction turning amber for peak potency.</li>
                 </ul>
               </div>
 
               <div className="bg-[#275C53] rounded-2xl p-6 text-white">
-                <h3 className="text-sm font-bold uppercase tracking-[1px] mb-2">Suitable Canadian Provinces</h3>
+                <h3 className="text-sm font-bold uppercase tracking-[1px] mb-2">Suitable Australian States &amp; Territories</h3>
                 <p className="text-white/60 text-[13px] mb-3">
-                  {product.name} grows well across Australia with proper environmental control.
+                  {product.name} thrives across Australia when environmental conditions are managed properly.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {['BC', 'AB', 'SK', 'MB', 'ON', 'QC', 'NB', 'NS', 'PE', 'NL'].map(p => (
+                  {['NSW', 'VIC', 'QLD', 'SA', 'WA', 'TAS', 'ACT', 'NT'].map(p => (
                     <span key={p} className="px-3 py-1 bg-white/10 rounded-full text-[12px] font-medium">{p}</span>
                   ))}
                 </div>
@@ -850,39 +850,36 @@ export function ProductDetail({
               {/* Trust Grid */}
               <div className="grid sm:grid-cols-3 gap-4 mb-8">
                 <div className="bg-[#F5F0EA] rounded-2xl p-5 text-center">
-                  <span className="text-3xl block mb-2">🇺🇸</span>
-                  <h3 className="text-[14px] font-bold text-[#275C53] mb-1">Free US Shipping</h3>
-                  <p className="text-[12px] text-[#192026]/40">Free shipping on all orders over $150 AUD. Standard shipping $9.99 AUD.</p>
+                  <span className="text-3xl block mb-2">🇦🇺</span>
+                  <h3 className="text-[14px] font-bold text-[#275C53] mb-1">Free AU Delivery</h3>
+                  <p className="text-[12px] text-[#192026]/40">Complimentary delivery on orders above $150 AUD. Flat-rate $9.99 AUD for all other orders.</p>
                 </div>
                 <div className="bg-[#F5F0EA] rounded-2xl p-5 text-center">
                   <span className="text-3xl block mb-2">🌱</span>
-                  <h3 className="text-[14px] font-bold text-[#275C53] mb-1">Germination Guarantee</h3>
-                  <p className="text-[12px] text-[#192026]/40">If your seeds don&apos;t germinate following our guide, we&apos;ll replace them. That&apos;s our promise to Australian growers.</p>
+                  <h3 className="text-[14px] font-bold text-[#275C53] mb-1">Germination Promise</h3>
+                  <p className="text-[12px] text-[#192026]/40">Seeds that fail to sprout using our recommended method are replaced at no cost. That is our commitment to Aussie growers.</p>
                 </div>
                 <div className="bg-[#F5F0EA] rounded-2xl p-5 text-center">
                   <span className="text-3xl block mb-2">🔒</span>
-                  <h3 className="text-[14px] font-bold text-[#275C53] mb-1">Discreet Packaging</h3>
-                  <p className="text-[12px] text-[#192026]/40">Plain, unmarked packaging with no cannabis branding. Crush-resistant containers protect your seeds in transit.</p>
+                  <h3 className="text-[14px] font-bold text-[#275C53] mb-1">Unmarked Packaging</h3>
+                  <p className="text-[12px] text-[#192026]/40">Nondescript, plain packaging with zero cannabis branding. Seeds travel inside crush-resistant containers for added protection.</p>
                 </div>
               </div>
 
-              {/* Delivery by Province */}
+              {/* Delivery by State/Territory */}
               <div className="bg-white rounded-2xl border border-[#275C53]/5 p-5 mb-6">
-                <h3 className="text-sm font-bold text-[#275C53] uppercase tracking-[1px] mb-4">Estimated Delivery by Province</h3>
+                <h3 className="text-sm font-bold text-[#275C53] uppercase tracking-[1px] mb-4">Estimated Delivery by State / Territory</h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {[
-                    { prov: 'California', days: '2-4 business days' },
-                    { prov: 'Colorado', days: '2-4 business days' },
-                    { prov: 'Texas', days: '3-5 business days' },
-                    { prov: 'Michigan', days: '3-5 business days' },
-                    { prov: 'New York', days: '3-5 business days' },
-                    { prov: 'Florida', days: '4-6 business days' },
-                    { prov: 'Oregon', days: '5-7 business days' },
-                    { prov: 'Washington', days: '5-7 business days' },
-                    { prov: 'Nevada', days: '5-7 business days' },
-                    { prov: 'Alaska', days: '6-8 business days' },
-                    { prov: 'Hawaii', days: '7-10 business days' },
-                    { prov: 'Puerto Rico', days: '7-10 business days' },
+                    { prov: 'New South Wales', days: '3-5 business days' },
+                    { prov: 'Victoria', days: '3-5 business days' },
+                    { prov: 'Queensland', days: '3-5 business days' },
+                    { prov: 'South Australia', days: '4-6 business days' },
+                    { prov: 'Western Australia', days: '5-7 business days' },
+                    { prov: 'Tasmania', days: '5-7 business days' },
+                    { prov: 'ACT', days: '3-5 business days' },
+                    { prov: 'Northern Territory', days: '5-7 business days' },
+                    { prov: 'Regional Areas', days: '5-8 business days' },
                   ].map(({ prov, days }) => (
                     <div key={prov} className="flex justify-between items-center px-3 py-2 bg-[#F5F0EA] rounded-lg">
                       <span className="text-[12px] font-medium text-[#192026]">{prov}</span>
@@ -897,24 +894,24 @@ export function ProductDetail({
                 <div className="bg-white rounded-2xl border border-[#275C53]/5 p-5">
                   <h3 className="text-sm font-bold text-[#275C53] uppercase tracking-[1px] mb-3">Payment Methods</h3>
                   <div className="space-y-2">
-                    {['Visa / Mastercard', 'Cryptocurrency (BTC, ETH)', 'Cryptocurrency (BTC, ETH)', 'Mail-in Payment'].map(m => (
+                    {['Visa / Mastercard', 'Cryptocurrency (BTC, ETH)', 'Bank Transfer'].map(m => (
                       <div key={m} className="flex items-center gap-2 text-[13px] text-[#192026]/60">
                         <span className="text-[#275C53]">✓</span> {m}
                       </div>
                     ))}
                   </div>
-                  <p className="text-[11px] text-[#192026]/30 mt-3">All transactions are processed through encrypted, PCI-compliant systems.</p>
+                  <p className="text-[11px] text-[#192026]/30 mt-3">Every transaction is processed via encrypted, PCI-DSS-compliant payment systems.</p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-[#275C53]/5 p-5">
                   <h3 className="text-sm font-bold text-[#275C53] uppercase tracking-[1px] mb-3">Our Guarantees</h3>
                   <div className="space-y-2">
                     {[
-                      'Germination guarantee on all seeds',
-                      'Delivery guarantee — lost orders reshipped free',
-                      '7-day return window (unopened products)',
-                      'Tracking number on every order',
-                      '24/7 customer support',
+                      'Germination promise covering every seed',
+                      'Delivery assurance — missing parcels re-dispatched free',
+                      '14-day return window for sealed products',
+                      'Australia Post tracking on all orders',
+                      'Responsive support team (Mon-Fri AEST)',
                     ].map(g => (
                       <div key={g} className="flex items-center gap-2 text-[13px] text-[#192026]/60">
                         <span className="text-[#D7B65D]">★</span> {g}
@@ -927,8 +924,8 @@ export function ProductDetail({
               {/* CTA */}
               <div className="bg-[#275C53] rounded-2xl p-6 mt-6 text-center text-white">
                 <h3 className="text-lg font-bold mb-1" style={{ fontFamily: 'var(--font-patua)' }}>Order {product.name} with Confidence</h3>
-                <p className="text-white/50 text-[13px] mb-3">Discreet packaging, tracked shipping, and germination guarantee on every order across Australia.</p>
-                <p className="text-[13px] text-white/40">Questions? Contact us at <strong className="text-[#D7B65D]">support@royalkingseeds.au</strong> or call <strong className="text-[#D7B65D]">+support@royalkingseeds.au</strong></p>
+                <p className="text-white/50 text-[13px] mb-3">Unmarked packaging, tracked postage via Australia Post, and our germination promise — included with every order.</p>
+                <p className="text-[13px] text-white/40">Questions? Reach our team at <strong className="text-[#D7B65D]">support@royalkingseeds.au</strong></p>
               </div>
             </div>
           )}
@@ -968,7 +965,7 @@ export function ProductDetail({
                 <span className="text-2xl">💬</span>
                 <div>
                   <p className="text-white text-[14px] font-semibold">Still have questions?</p>
-                  <p className="text-white/50 text-[12px]">Contact our team at support@royalkingseeds.au — we are happy to help Australian growers succeed.</p>
+                  <p className="text-white/50 text-[12px]">Drop us a line at support@royalkingseeds.au — we are glad to assist Aussie cultivators with anything they need.</p>
                 </div>
               </div>
             </div>
@@ -980,7 +977,7 @@ export function ProductDetail({
               <h2 className="text-xl font-bold text-[#275C53] mb-2" style={{ fontFamily: 'var(--font-patua)' }}>Customer Reviews</h2>
               <div className="bg-[#F5F0EA] rounded-2xl p-8 text-center">
                 <p className="text-[#192026]/40 text-sm mb-4">Be the first to review {product.name}</p>
-                <p className="text-[#192026]/30 text-[12px] mb-4">Reviews from verified Australian buyers will appear here.</p>
+                <p className="text-[#192026]/30 text-[12px] mb-4">Feedback from verified Aussie purchasers will be displayed here.</p>
                 <button className="btn-main !text-[12px] !px-6 !py-2.5 cursor-pointer">Write a Review</button>
               </div>
             </div>
