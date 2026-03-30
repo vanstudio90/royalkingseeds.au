@@ -2,34 +2,35 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'FAQ — Cannabis Seed Questions Answered',
-  description: 'Find answers to common questions about buying cannabis seeds online in Australia. Shipping, payment, germination guarantee, legality, and growing advice from Royal King Seeds.',
+  title: 'Your Questions Answered — Cannabis Seeds FAQ for Aussie Growers',
+  description: 'Get clear answers about ordering cannabis seeds online in Australia. Covers delivery timeframes, accepted payment options, germination support, Australian law, and cultivation guidance from Royal King Seeds.',
   alternates: { canonical: 'https://royalkingseeds.au/faq' },
 };
 
 const faqs = [
-  { category: 'Ordering & Payment', questions: [
-    { q: 'How do I place an order?', a: 'Browse our seed catalog, add items to your cart, and proceed to checkout. Enter your shipping and payment details, and your order will be confirmed via email within minutes.' },
-    { q: 'What payment methods do you accept?', a: 'We accept Visa, Mastercard, and cryptocurrency (Bitcoin, Ethereum). All payment processing is secured with SSL encryption for your protection.' },
-    { q: 'Can I modify or cancel my order?', a: 'Contact us within 2 hours of placing your order at support@royalkingseeds.au. Once orders enter processing, modifications may not be possible.' },
-    { q: 'Do you offer bulk or wholesale pricing?', a: 'Yes. We offer volume discounts on pack sizes of 10 and 20 seeds. For larger wholesale inquiries, contact our team directly.' },
+  { category: 'Seeds & Cultivation', questions: [
+    { q: 'What distinguishes feminised seeds from autoflowering varieties?', a: 'Feminised seeds yield virtually all female plants (99.9%) and depend on photoperiod changes — switching to a 12/12 light schedule — to begin flowering. Autoflowering varieties, by contrast, transition into bloom automatically once they reach a certain maturity (typically 8-10 weeks after sprouting), irrespective of how many hours of light they receive.' },
+    { q: 'How should I keep my seeds viable over time?', a: 'For optimal longevity, place your seeds inside an airtight vessel — such as a sealed glass jar — and store them in the refrigerator. A cool, dark, moisture-free environment preserves viability for multiple years. Avoid temperature fluctuations, as these can trigger premature germination.' },
+    { q: 'Do you back your seeds with a germination promise?', a: 'Absolutely. Should your seeds not sprout when you follow our recommended germination technique, we will send replacements at no charge. Simply reach out within 30 days of receiving your parcel, including your order reference and photographs that document your germination attempt.' },
+    { q: 'Can I get growing tips from your team?', a: 'Of course! Our blog features detailed cultivation guides suited to Australian climates and conditions. Beyond that, our support crew is always glad to assist with varietal selection, troubleshooting, and general growing questions tailored to your region.' },
+    { q: 'Which strains perform best in hot Australian summers?', a: 'Heat-tolerant sativa and sativa-dominant hybrids often thrive during Australian summers. Strains with landrace genetics from equatorial regions — such as Acapulco Gold — handle high temperatures well. For southern states with milder summers, most indica and hybrid varieties perform admirably outdoors from October through April.' },
   ]},
-  { category: 'Shipping & Delivery', questions: [
-    { q: 'Where do you ship?', a: 'We ship to all Australian states and territories. Orders are packaged discreetly in plain, unmarked packaging with no external indication of contents.' },
-    { q: 'How long does shipping take?', a: 'Orders ship within 1-2 business days and typically arrive within 3-7 business days via Australia Post. Tracking information is provided for every order.' },
-    { q: 'Is shipping free?', a: 'Free shipping on all orders over $150 AUD. Orders under $150 have a flat shipping rate of $9.99.' },
-    { q: 'Is the packaging discreet?', a: 'Absolutely. All orders ship in plain, unmarked boxes or envelopes. There is no mention of cannabis, seeds, or Royal King Seeds on the exterior packaging.' },
+  { category: 'Delivery & Dispatch', questions: [
+    { q: 'Which regions in Australia do you deliver to?', a: 'We post to every state and territory across Australia — from Queensland to Tasmania, Western Australia to the ACT. Each order is dispatched in plain, nondescript packaging that reveals nothing about its contents.' },
+    { q: 'What are your delivery timeframes?', a: 'Orders are processed and dispatched within 1-2 business days. Delivery via Australia Post typically takes between 3-7 business days, depending on your location. A tracking reference is emailed with every order so you can follow your parcel.' },
+    { q: 'Do you offer complimentary shipping?', a: 'Yes — all orders totalling $150 AUD or more ship free of charge. For orders below that threshold, a flat delivery fee of $9.99 applies Australia-wide.' },
+    { q: 'How private is the packaging?', a: 'Completely. We use unmarked, generic boxes or satchels with no logos, product descriptions, or any reference to cannabis, seeds, or Royal King Seeds anywhere on the exterior. Your privacy matters to us.' },
   ]},
-  { category: 'Seeds & Growing', questions: [
-    { q: 'What is your germination guarantee?', a: 'If your seeds fail to germinate following our recommended germination guide, we will replace them at no additional cost. Contact us within 30 days of delivery with photos documenting the germination attempt.' },
-    { q: 'What\'s the difference between feminized and autoflower seeds?', a: 'Feminized seeds produce 99.9% female plants and require light cycle changes to trigger flowering. Autoflower seeds flower automatically based on age (8-10 weeks from seed), regardless of light schedule.' },
-    { q: 'How should I store my seeds?', a: 'Store seeds in a cool, dark, dry place. An airtight container in the refrigerator is ideal for long-term storage. Properly stored seeds can remain viable for several years.' },
-    { q: 'Do you provide growing advice?', a: 'Yes! Check our blog for growing guides, and our support team is happy to help with strain selection and basic cultivation questions.' },
+  { category: 'Purchases & Payments', questions: [
+    { q: 'What is the ordering process?', a: 'Browse our seed catalogue, select your preferred strains and pack sizes, then proceed to checkout. Enter your delivery address and payment information, and you will receive an order confirmation email shortly after.' },
+    { q: 'Which payment options are available?', a: 'We accept Visa, Mastercard, and major cryptocurrencies including Bitcoin and Ethereum. Every transaction is protected by SSL encryption to safeguard your financial details.' },
+    { q: 'Is it possible to amend or cancel a placed order?', a: 'Get in touch within 2 hours of ordering by emailing support@royalkingseeds.au. Once an order moves into the packing stage, changes may no longer be feasible.' },
+    { q: 'Are volume discounts available for larger orders?', a: 'Yes. We provide tiered pricing on 10-seed and 20-seed packs. For wholesale or bulk enquiries beyond our standard pack sizes, please contact our team directly for a custom quote.' },
   ]},
-  { category: 'Legal & Privacy', questions: [
-    { q: 'Is it legal to buy cannabis seeds in Australia?', a: 'Cannabis seeds are sold as adult novelty souvenirs and for genetic preservation purposes. Laws regarding germination vary by state and territory. Buyers are responsible for understanding and complying with their local laws.' },
-    { q: 'Is my personal information safe?', a: 'We use SSL encryption for all transactions and never share your personal information with third parties. Read our full Privacy Policy for details on data handling.' },
-    { q: 'Do I need to be a certain age to order?', a: 'Yes, you must be at least 21 years of age (or the legal age in your jurisdiction) to place an order.' },
+  { category: 'Australian Law & Privacy', questions: [
+    { q: 'What is the legal position on purchasing cannabis seeds in Australia?', a: 'Cannabis seeds are offered as adult novelty collectibles and for the purpose of genetic preservation. Legislation around germination differs between states and territories — for instance, the ACT permits limited personal cultivation for adults. Purchasers must familiarise themselves with the regulations that apply in their own jurisdiction.' },
+    { q: 'How do you protect my personal data?', a: 'All transactions use SSL encryption, and we never disclose your personal details to outside parties. Our complete data-handling practices are outlined in our Privacy Policy, which aligns with the Australian Privacy Act 1988.' },
+    { q: 'Is there an age requirement for placing an order?', a: 'Yes. You must be at least 18 years of age (or the minimum legal age in your state or territory) to purchase from our store.' },
   ]},
 ];
 
@@ -37,8 +38,8 @@ export default function FaqPage() {
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-12">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl text-[#275C53] mb-4" style={{ fontFamily: 'var(--font-patua)' }}>Frequently Asked Questions</h1>
-        <p className="text-[#192026]/70 mb-10">Everything you need to know about buying cannabis seeds online from Royal King Seeds. Can&apos;t find your answer? <Link href="/contact" className="text-[#275C53] font-medium hover:text-[#D7B65D]">Contact us</Link>.</p>
+        <h1 className="text-3xl text-[#275C53] mb-4" style={{ fontFamily: 'var(--font-patua)' }}>Common Questions from Aussie Growers</h1>
+        <p className="text-[#192026]/70 mb-10">Straightforward answers for everything related to buying cannabis seeds online with Royal King Seeds. If something is not covered here, <Link href="/contact" className="text-[#275C53] font-medium hover:text-[#D7B65D]">get in touch with our team</Link>.</p>
 
         {faqs.map((section) => (
           <div key={section.category} className="mb-10">
@@ -60,16 +61,16 @@ export default function FaqPage() {
         ))}
 
         <div className="mt-10 bg-[#275C53] rounded-2xl p-8 text-center">
-          <h3 className="text-xl text-white mb-3" style={{ fontFamily: 'var(--font-patua)' }}>Still Have Questions?</h3>
-          <p className="text-white/70 text-sm mb-6">Our team is here to help with strain selection, orders, and growing advice.</p>
-          <Link href="/contact" className="btn-main !bg-[#D7B65D] !text-[#1a3d36]">Contact Support</Link>
+          <h3 className="text-xl text-white mb-3" style={{ fontFamily: 'var(--font-patua)' }}>Need Further Assistance?</h3>
+          <p className="text-white/70 text-sm mb-6">Our Australian-based support crew can help with varietal recommendations, order queries, and growing guidance.</p>
+          <Link href="/contact" className="btn-main !bg-[#D7B65D] !text-[#1a3d36]">Reach Out to Us</Link>
         </div>
 
         <div className="mt-8 flex flex-wrap gap-2">
-          <Link href="/shipping" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Shipping Info</Link>
-          <Link href="/product-category/shop-all-cannabis-seeds" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Shop Seeds</Link>
-          <Link href="/blog" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Growing Guides</Link>
-          <Link href="/privacy" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Privacy Policy</Link>
+          <Link href="/shipping" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Delivery Details</Link>
+          <Link href="/product-category/shop-all-cannabis-seeds" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Browse Seeds</Link>
+          <Link href="/blog" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Cultivation Guides</Link>
+          <Link href="/privacy" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Data Protection</Link>
         </div>
       </div>
     </div>

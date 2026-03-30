@@ -168,7 +168,7 @@ export function generateStrainSpecs(product: Product): StrainSpecs {
 
   const heightMin = product.autoflower ? 60 + (h % 30) : st === 'indica' ? 70 + (h % 30) : st === 'sativa' ? 120 + (h % 40) : 90 + (h % 40);
   const heightMax = heightMin + 40 + (h % 30);
-  const height = `${(heightMin / 30).toFixed(1)} - ${(heightMax / 30).toFixed(1)} ft | ${heightMin} - ${heightMax} cm`;
+  const height = `${heightMin} - ${heightMax} cm`;
 
   const yieldIndoorMin = product.autoflower ? 250 + (h % 150) : 350 + (h % 150);
   const yieldIndoorMax = yieldIndoorMin + 100 + (h % 100);
@@ -185,10 +185,8 @@ export function generateStrainSpecs(product: Product): StrainSpecs {
     harvest,
     height,
     yieldRating,
-    yieldIndoor: `${(yieldIndoorMin / 28.35).toFixed(1)} oz/ft² | ${yieldIndoorMin} - ${yieldIndoorMax} g/m²`,
-    yieldOutdoor: product.autoflower
-      ? `${(yieldOutdoorMin / 28.35).toFixed(0)} - ${(yieldOutdoorMax / 28.35).toFixed(0)} oz/plant | ${yieldOutdoorMin} - ${yieldOutdoorMax} g/plant`
-      : `${(yieldOutdoorMin / 28.35).toFixed(0)} - ${(yieldOutdoorMax / 28.35).toFixed(0)} oz/plant | ${yieldOutdoorMin} - ${yieldOutdoorMax} g/plant`,
+    yieldIndoor: `${yieldIndoorMin} - ${yieldIndoorMax} g/m²`,
+    yieldOutdoor: `${yieldOutdoorMin} - ${yieldOutdoorMax} g/plant`,
     floweringTime,
   };
 }
@@ -210,52 +208,52 @@ export function generateFAQs(product: Product): FAQ[] {
 
   const faqs: FAQ[] = [
     {
-      q: `Is ${name} good for beginner growers in the USA?`,
+      q: `How suitable is ${name} for first-time growers in Australia?`,
       a: product.autoflower
-        ? `Yes. ${name} autoflower seeds are well-suited for beginners. Autoflowering genetics mean the plant flowers automatically based on age, requiring no light schedule changes. Plants stay compact at ${specs.height}, and the full seed-to-harvest cycle completes in just ${specs.floweringTime}. Australian beginners will appreciate its forgiving nature and fast turnaround.`
+        ? `Highly suitable. ${name} autoflower seeds rank among the most forgiving genetics for newcomers. The ruderalis heritage triggers flowering on its own schedule — no light manipulation needed. Expect compact plants staying within ${specs.height} and a complete cycle wrapping up in ${specs.floweringTime}. Perfect for Australian beginners wanting reliable results with minimal fuss.`
         : st === 'indica'
-        ? `${name} is a good choice for beginners with basic growing knowledge. Its compact ${st} structure stays manageable at ${specs.height}, and the ${specs.floweringTime} flowering period is relatively short. The plants are naturally resilient to temperature fluctuations common in Australian growing environments.`
-        : `${name} requires moderate growing experience. ${st.charAt(0).toUpperCase() + st.slice(1)} genetics can produce taller plants reaching ${specs.height}, which may need training techniques like topping or LST. However, with proper attention, Australian growers at any level can achieve rewarding results.`,
+        ? `${name} sits comfortably in the beginner-friendly bracket. The ${st} growth habit keeps things manageable at ${specs.height}, while the ${specs.floweringTime} bloom phase wraps up before patience wears thin. These plants handle the temperature swings common across Australian growing conditions without throwing a tantrum.`
+        : `Growers with a run or two under their belt will get the most from ${name}. The ${st} genetics push heights to ${specs.height}, so training methods such as topping and LST become valuable tools. That said, dedicated Australian newcomers who follow our growing guides can absolutely pull off a satisfying harvest.`,
     },
     {
-      q: `What are the effects of ${name}?`,
+      q: `What kind of experience does ${name} deliver?`,
       a: st === 'indica'
-        ? `${name} delivers deeply relaxing ${st} effects including ${effects.toLowerCase()}. With ${thcBase}%+ THC, expect a powerful body stone that builds gradually from a gentle head buzz into full physical relaxation. Canadian users commonly choose this strain for evening use, stress relief, and sleep support.`
+        ? `${name} is built around deep, whole-body ${st} relaxation. Users report ${effects.toLowerCase()} as the dominant sensations. At ${thcBase}%+ THC, the onset begins with gentle mental warmth before settling into thorough physical ease. Australian growers frequently reach for this one after a long day when proper unwinding is the goal.`
         : st === 'sativa'
-        ? `${name} produces uplifting ${st} effects characterized by ${effects.toLowerCase()}. With ${thcBase}%+ THC, you can expect cerebral stimulation, enhanced creativity, and a clear-headed energy that makes it popular for daytime use among Australian consumers. The effects are motivating without causing anxiety at moderate doses.`
-        : `${name} offers balanced hybrid effects combining ${effects.toLowerCase()}. At ${thcBase}%+ THC, you get a well-rounded experience — initial cerebral uplift transitions into comfortable body relaxation. This versatility makes it suitable for both daytime and evening use, which Australian consumers particularly appreciate.`,
+        ? `Expect an invigorating ${st} experience from ${name}, centred around ${effects.toLowerCase()}. Testing at ${thcBase}%+ THC, this strain sparks mental sharpness, imaginative thinking, and a buoyant mood suited to daytime hours. Australian users favour it for afternoons when focus and motivation matter.`
+        : `${name} strikes a genuine hybrid balance, weaving together ${effects.toLowerCase()} into one experience. At ${thcBase}%+ THC, you can expect an early wave of mental clarity that gradually merges with physical comfort. This dual character makes it adaptable to any time of day — a trait that Australian growers particularly value.`,
     },
     {
-      q: `How much yield can I expect from ${name} ${type} seeds?`,
-      a: `Under optimal conditions, ${name} produces ${specs.yieldIndoor} indoors and ${specs.yieldOutdoor} outdoors. ${product.autoflower ? 'As an autoflower, yields are somewhat lower than photoperiod versions, but the fast turnaround allows for multiple harvests per Canadian growing season.' : 'Maximizing yield requires proper lighting (18/6 veg, 12/12 flower), adequate nutrition, and training techniques like topping or SCROG.'} Australian growers report best results with consistent environment control and quality nutrients.`,
+      q: `What harvest numbers does ${name} ${type} produce?`,
+      a: `When the environment is dialled in, ${name} delivers ${specs.yieldIndoor} from indoor setups and ${specs.yieldOutdoor} in outdoor gardens. ${product.autoflower ? 'Per-plant numbers sit below photoperiod varieties, but the rapid turnaround lets Australian growers stack multiple cycles throughout the year, often exceeding annual totals from a single photoperiod run.' : 'Reaching the upper end of that range calls for quality lighting on an 18/6 veg and 12/12 flower schedule, balanced feeding, and canopy training through topping or ScrOG.'} Growers across Australia consistently achieve strong results with stable environment management.`,
     },
     {
-      q: `Can I grow ${name} outdoors in Australia?`,
+      q: `Does ${name} perform well outdoors across Australian climates?`,
       a: product.autoflower
-        ? `Absolutely. ${name} autoflower seeds thrive outdoors across Australia thanks to their automatic flowering and fast lifecycle. They can be planted from October through January and still finish before autumn arrives. Growers in Queensland, New South Wales, and even cooler regions like Victoria and Tasmania have reported successful outdoor harvests.`
-        : `Yes, ${name} can be grown outdoors in Australia, particularly in regions with longer growing seasons like Queensland and the Northern Territory. Seeds should be started indoors in September-October and transplanted after the last frost. Harvest typically falls ${specs.harvest}. In cooler southern regions, consider starting earlier indoors or using a greenhouse to extend the season.`,
+        ? `It does, and impressively so. ${name} autoflower seeds handle the full range of Australian conditions — from the subtropical warmth of the Gold Coast to the cooler seasons around Melbourne. Plantings from October through to January still wrap up well ahead of autumn. Growers in every state and territory have pulled successful outdoor harvests with this strain.`
+        : `Outdoor cultivation of ${name} works well throughout most of Australia, with the best results in extended-season regions such as Queensland, Western Australia, and the Northern Territory. Start seeds under cover in September to October and move them outside once frost risk passes. Expect to harvest around ${specs.harvest}. In Tasmania, Victoria, and the ACT, a greenhouse or polytunnel extends the window for this strain.`,
     },
     {
-      q: `What does ${name} taste and smell like?`,
+      q: `How would you describe the flavour and aroma of ${name}?`,
       a: st === 'indica'
-        ? `${name} features a rich ${st} terpene profile with earthy, woody base notes accented by hints of pine and spice. The flavor is smooth and grounding — earthy on the inhale with subtle sweet or berry undertones on the exhale. The aroma intensifies during late flowering, so Australian indoor growers should consider carbon filtration.`
+        ? `${name} carries a grounded ${st} terpene signature — deep earth and timber notes laced with subtle pine and warm spice. On the palate, it draws smooth with a foundation of damp forest floor and finishes with soft berry or caramel sweetness. Aromas build substantially during the final flowering weeks, so carbon filtration is worth considering for indoor setups.`
         : st === 'sativa'
-        ? `${name} offers a bright, complex ${st} terpene profile with citrus, tropical fruit, and herbal notes. The flavor is uplifting — sweet and tangy on the inhale with floral or hazy undertones. The aroma is pungent and invigorating, filling the grow room with fresh, energizing scents during late flowering.`
-        : `${name} delivers a layered hybrid terpene profile combining sweet, earthy, and citrus notes. The flavor profile is complex — initial sweetness gives way to deeper earthy or fuel undertones. The aroma is distinctive and increases significantly during the final weeks of flowering.`,
+        ? `${name} presents a vibrant ${st} bouquet loaded with citrus zest, tropical fruit, and fresh herb layers. The taste opens bright and tangy before settling into floral or haze-tinged undertones. During late flower, the fragrance fills an entire room with sharp, lively scents — indoor growers should plan for odour management accordingly.`
+        : `${name} unfolds a multi-layered hybrid terpene blend that moves between sweet, resinous, and citrus-tinged notes. The initial impression is sugary and inviting, transitioning into richer fuel or dank earth character as you exhale. Fragrance output climbs steeply in the final two to three weeks of flowering.`,
     },
     {
-      q: `How long does ${name} take to flower?`,
+      q: `What is the flowering duration for ${name}?`,
       a: product.autoflower
-        ? `${name} autoflower seeds complete their entire lifecycle — from germination to harvest — in ${specs.floweringTime}. This is significantly faster than photoperiod versions, which makes it ideal for Australian growers wanting quick results or planning multiple outdoor runs in a single season.`
-        : `${name} has a flowering period of ${specs.floweringTime} when grown under a 12/12 light cycle. Add 4-6 weeks of vegetative growth for a total indoor cycle of approximately 12-16 weeks. For outdoor Australian growers, flowering begins naturally as daylight hours decrease in late summer, with harvest typically falling ${specs.harvest}.`,
+        ? `${name} autoflower seeds run through their full lifecycle — germination right through to chop day — within ${specs.floweringTime}. That compressed timeline opens the door for Australian growers to run successive outdoor plantings or maintain a rolling indoor harvest schedule throughout the year.`
+        : `Under a 12/12 light regime, ${name} moves through its flowering phase in ${specs.floweringTime}. Factor in four to six weeks of vegetative growth beforehand for a total indoor cycle of roughly twelve to sixteen weeks. Outdoors in Australia, the shortening daylight from late January onward naturally triggers bloom, with harvest landing around ${specs.harvest}.`,
     },
     {
-      q: `Is ${name} legal to grow in Australia?`,
-      a: `Cannabis seed laws vary by state and territory in Australia. The ACT permits limited personal cultivation for adults. In other states and territories, seeds are sold as collector items and for genetic preservation. ${name} ${type} seeds can be purchased and shipped discreetly Australia-wide. Buyers are responsible for understanding their local regulations. Royal King Seeds ships all orders discreetly with full tracking.`,
+      q: `What are the cannabis seed laws relevant to growing ${name} in Australia?`,
+      a: `Legislation differs between Australian states and territories. The ACT permits adults to cultivate a limited number of plants for personal use. Elsewhere, cannabis seeds are available as adult novelty souvenirs and for genetic preservation purposes. ${name} ${type} seeds ship discreetly to all Australian addresses with full tracking. It remains each buyer's responsibility to understand the rules that apply in their jurisdiction.`,
     },
     {
-      q: `What is the THC content of ${name}?`,
-      a: `${name} typically produces THC levels of ${specs.thc}. Actual THC content varies based on growing conditions, nutrients, harvest timing, and curing methods. To maximize potency, harvest when trichomes are mostly milky white with some amber, provide strong lighting during flower, and cure buds slowly in a controlled environment.`,
+      q: `How potent is ${name} in terms of THC?`,
+      a: `${name} typically registers THC at ${specs.thc}. Real-world potency depends on the interplay between growing environment, nutrient programme, harvest window, and post-harvest curing. For peak cannabinoid levels, aim to harvest when the majority of trichome heads appear milky with a scattering of amber, maintain strong light intensity through the flowering phase, and allow a slow, controlled cure over several weeks.`,
     },
   ];
 
@@ -280,24 +278,24 @@ export function generateGrowJournal(product: Product): GrowJournalEntry[] {
 
   if (isAuto) {
     return [
-      { week: 1, stage: 'Germination', title: 'Seed Start', description: `${name} autoflower seeds typically sprout within 2-5 days using the paper towel method. Plant directly into the final container (3-5 gallon) to avoid transplant stress — autos don't recover well from transplanting.`, tips: 'Use a small amount of water in a circle around the seedling to encourage root spread.' },
-      { week: 2, stage: 'Seedling', title: 'First True Leaves', description: `Cotyledons open and first serrated true leaves appear. Keep light on 18-20 hours per day. ${name}'s autoflower clock has started — every day of healthy growth counts.`, tips: 'Gentle watering around the stem — do not overwater at this stage.' },
-      { week: 4, stage: 'Vegetative', title: 'Rapid Growth Phase', description: `Rapid growth begins. ${name} develops multiple nodes and begins branching. Under 18-20 hours of light, expect vigorous growth. Light LST can be started now by gently bending the main stem.`, tips: 'Start nutrients at 1/4 strength and gradually increase. Autoflowers are sensitive to overfeeding.' },
-      { week: 5, stage: 'Pre-Flower', title: 'Auto-Flowering Begins', description: `${name} begins showing pre-flowers — small white pistils at the nodes. The stretch phase begins, and plants may increase 50-100% in height. Continue LST to create an even canopy.`, tips: 'This is the last chance for training. Do not top autoflowers after this point.' },
-      { week: 7, stage: 'Flower', title: 'Bud Development', description: `Bud sites form and begin to fatten. ${name}'s ${st} genetics become evident in the bud structure. Trichome production increases rapidly. Switch to bloom nutrients and maintain humidity below 50%.`, tips: 'Increase airflow to prevent mold in the developing buds.' },
-      { week: 9, stage: 'Late Flower', title: 'Ripening & Flush', description: `Buds reach peak density and trichomes shift from clear to milky. ${name}'s terpene production peaks — expect strong aromas. Begin flushing with plain water 7-10 days before harvest.`, tips: 'Check trichomes with a loupe — harvest when mostly cloudy for balanced effects.' },
-      { week: 10, stage: 'Harvest', title: 'Harvest Day', description: `Cut plants, remove large fan leaves, and hang branches to dry at 60°F/16°C and 60% humidity for 7-10 days. Once stems snap cleanly, trim and cure in sealed jars, burping daily for 2 weeks minimum.`, tips: 'Longer curing (4-8 weeks) significantly improves flavor, smoothness, and potency.' },
+      { week: 1, stage: 'Germination', title: 'Cracking the Shell', description: `Drop ${name} autoflower seeds between damp paper towels or directly into a 12–18 litre fabric pot filled with light, airy mix. Most seeds show a taproot within two to five days. Planting straight into the final container avoids the transplant shock that can stunt autoflowers permanently.`, tips: 'Water a narrow ring around the seedling — encourages roots to reach outward rather than staying tight to the stem.' },
+      { week: 2, stage: 'Seedling', title: 'Cotyledon Stage', description: `The seed leaves unfold and the first set of serrated true leaves emerges. Run lights for 18–20 hours daily from this point forward. ${name}'s internal autoflower timer is already ticking, so every day of healthy growth translates directly into final harvest weight.`, tips: 'Resist the urge to drench the pot — at this stage the root system is tiny and excess moisture invites damping off.' },
+      { week: 4, stage: 'Vegetative', title: 'Branching Out', description: `Vertical and lateral growth accelerates noticeably. ${name} starts stacking nodes and pushing side branches. With 18–20 hours of daily light, the canopy fills out fast. Gentle LST — anchoring the main stem at an angle — opens up lower growth to light without the stress of topping.`, tips: 'Introduce nutrients at quarter strength and step up gradually each feed. Autoflowers punish heavy-handed feeding.' },
+      { week: 5, stage: 'Pre-Flower', title: 'Transition Phase', description: `White pistils appear at the nodes, signalling the shift from vegetative growth into bloom. Over the next week or two, ${name} may stretch 50–100% taller. Maintain any LST ties to keep the canopy level as the plant surges upward.`, tips: 'All training should wrap up now — stressing autoflowers once flowering has begun costs more than it gains.' },
+      { week: 7, stage: 'Flower', title: 'Bud Sites Stacking', description: `Flower clusters swell and fuse along the branches. ${name}'s ${st} heritage shows clearly in the bud architecture at this stage. Trichome coverage thickens day by day. Move to bloom-specific nutrients and keep relative humidity under 50%.`, tips: 'Boost airflow through the canopy — dense autoflower buds in humid Australian summers are a mould magnet.' },
+      { week: 9, stage: 'Late Flower', title: 'Final Swell & Flush', description: `Buds hit peak density and the trichome caps shift from transparent to milky white. ${name} pumps out maximum terpene production now — the grow space will smell intense. Switch to plain pH-adjusted water seven to ten days before the planned chop date.`, tips: 'Inspect trichomes under magnification — mostly cloudy heads with a few amber ones mark the sweet spot for balanced effects.' },
+      { week: 10, stage: 'Harvest', title: 'Chop & Dry', description: `Cut each branch, strip the large fan leaves, and hang the trimmed branches in a dark space held at 16°C and 60% relative humidity. Allow seven to ten days for a slow dry — stems should snap rather than bend when ready. Transfer trimmed buds to glass jars, opening them daily for at least a fortnight.`, tips: 'Extending the cure to four to eight weeks dramatically improves flavour, smoothness, and the overall smoking experience.' },
     ];
   }
 
   return [
-    { week: 1, stage: 'Germination', title: 'Seed Activation', description: `Start ${name} feminized seeds using the paper towel method or directly in a seedling plug. Seeds typically crack within 24-72 hours and emerge from soil within 5-7 days. Keep humidity at 70%+ and temperature around 75°F/24°C.`, tips: 'A heat mat under seedling trays speeds germination and promotes healthy root development.' },
-    { week: 3, stage: 'Seedling', title: 'Seedling Development', description: `${name} develops its first sets of true leaves. ${st === 'indica' ? 'Expect compact, bushy growth with tight node spacing.' : st === 'sativa' ? 'Expect stretchy growth with wider node spacing.' : 'Growth is balanced between vertical and lateral branching.'} Roots are establishing in the medium.`, tips: 'Transplant to a larger container once roots start emerging from the bottom of the starter pot.' },
-    { week: 5, stage: 'Vegetative', title: 'Vegetative Growth (18/6 Light)', description: `Under 18 hours of light, ${name} enters vigorous vegetative growth. Begin topping after the 4th-5th node to encourage bushier growth. Multiple branches develop rapidly.`, tips: 'Australian growers: if growing near a window, supplement with grow lights during shorter spring days.' },
-    { week: 7, stage: 'Late Veg', title: 'Training & Canopy Building', description: `Continue LST, SCROG, or mainlining techniques. ${name} responds well to training, developing multiple bud sites. Plants should fill the available canopy before flipping to flower.`, tips: 'Defoliate lightly to improve airflow and light penetration to lower bud sites.' },
-    { week: 8, stage: 'Flip', title: 'Flip to 12/12 & Stretch', description: `Switch lights to 12/12 to trigger flowering. ${name} enters a stretch phase — ${st === 'sativa' ? 'sativa genetics may cause 2-3x height increase during stretch.' : 'expect 50-100% height increase over 2 weeks.'} Pre-flowers appear within 7-10 days of the flip.`, tips: 'Raise lights accordingly during the stretch to prevent light burn on upper colas.' },
-    { week: 10, stage: 'Early Flower', title: 'Bud Formation', description: `Buds form and expand rapidly. ${name}'s trichome production increases significantly — buds become frosty and aromatic. Maintain humidity below 50% to prevent bud rot.`, tips: 'Supplement with CalMag and PK boosters during peak flowering for maximum resin production.' },
-    { week: 12, stage: 'Late Flower', title: 'Ripening & Flush', description: `${name} buds reach final density. Trichomes transition from clear to milky to amber. Fan leaves begin to yellow naturally. Begin flushing with plain pH'd water 10-14 days before planned harvest.`, tips: 'Harvesting with mostly milky trichomes gives more cerebral effects; more amber gives heavier body effects.' },
-    { week: 14, stage: 'Harvest', title: 'Harvest, Dry & Cure', description: `Chop the plant, trim fan leaves, and hang whole branches in a dark room at 60°F/16°C with 60% humidity. Dry for 7-14 days until stems snap. Cure in mason jars, burping daily for at least 2 weeks.`, tips: `A proper 4-8 week cure develops the full terpene profile and smoothness that ${name} is known for.` },
+    { week: 1, stage: 'Germination', title: 'Waking the Seed', description: `Place ${name} feminised seeds between moist paper towels or press them gently into a seedling plug. Taproots typically emerge within 24–72 hours, and shoots break the surface inside five to seven days. Hold humidity above 70% and keep the temperature near 24°C throughout.`, tips: 'A propagation heat mat underneath the tray keeps the root zone warm and consistent, speeding up emergence.' },
+    { week: 3, stage: 'Seedling', title: 'Early Leaf Growth', description: `${name} unfolds its first proper leaf sets. ${st === 'indica' ? 'Growth stays tight and bushy — nodes stack close together.' : st === 'sativa' ? 'Internodal spacing stretches out as the plant reaches upward.' : 'The growth pattern balances between compact stacking and moderate vertical stretch.'} Roots are colonising the medium and building the foundation for later vigour.`, tips: 'Pot up into a larger container as soon as roots emerge from the bottom of the starter plug or cell.' },
+    { week: 5, stage: 'Vegetative', title: 'Veg Phase Under 18/6', description: `With 18 hours of daily light, ${name} pushes vigorous above-ground growth. Top the main stem above the fourth or fifth node to redirect energy into multiple branches. Side shoots develop rapidly once apical dominance is broken.`, tips: 'Growing near a window in Australia? Supplement with a grow lamp during shorter spring days to maintain the 18-hour target.' },
+    { week: 7, stage: 'Late Veg', title: 'Shaping the Canopy', description: `Keep training through LST, ScrOG netting, or mainlining to spread the canopy evenly. ${name} responds well to these techniques, producing a table-flat surface with numerous future bud sites. Fill the available footprint before switching to flower.`, tips: 'Selective leaf removal at this stage opens interior growth to light and improves air circulation through the canopy.' },
+    { week: 8, stage: 'Flip', title: 'Light Switch & Stretch', description: `Drop the photoperiod to 12 hours on, 12 hours off. ${name} enters the flowering stretch — ${st === 'sativa' ? 'sativa heritage can push plants to double or triple their pre-flip height.' : 'anticipate a 50–100% height gain over roughly two weeks.'} Pistils emerge at the nodes seven to ten days after the switch.`, tips: 'Adjust lamp height as the canopy surges upward — keeping tops too close risks bleaching the upper colas.' },
+    { week: 10, stage: 'Early Flower', title: 'Flowers Taking Shape', description: `Bud clusters form and pack on mass rapidly. ${name}'s resin glands multiply across calyxes and sugar leaves — a visible frost develops over the flower surfaces. Hold humidity below 50% from this point onward to guard against bud rot.`, tips: 'A CalMag supplement alongside a PK bloom booster supports heavy resin production during this critical phase.' },
+    { week: 12, stage: 'Late Flower', title: 'Maturation & Flush', description: `${name} buds reach their final density and weight. Trichome heads progress from clear through milky to amber. Older fan leaves yellow and drop naturally as the plant redirects energy into the flowers. Begin a plain-water flush ten to fourteen days ahead of the target chop date.`, tips: 'Milky trichomes lean toward cerebral effects; a higher amber ratio shifts the balance toward body-heavy sedation.' },
+    { week: 14, stage: 'Harvest', title: 'Harvest, Dry & Cure', description: `Take down the plant, remove fan leaves, and hang full branches in a dark room at 16°C with 60% relative humidity. Slow-dry for seven to fourteen days until small stems snap cleanly. Jar the trimmed buds in sealed glass containers and open them once daily for a minimum of two weeks.`, tips: `Patience pays off — a four-to-eight-week cure unlocks the full terpene depth and smooth finish that ${name} is recognised for.` },
   ];
 }

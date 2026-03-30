@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Shipping & Delivery — Discreet Australian Seed Shipping',
-  description: 'Free shipping on orders over $150 AUD. Discreet packaging to all states and territories. 3-7 business day delivery with tracking. Learn about Royal King Seeds shipping policies.',
+  title: 'Delivery & Shipping — Tracked, Discreet Postage Across Australia',
+  description: 'Complimentary delivery on orders above $150 AUD. Unmarked packaging shipped via Australia Post to every state and territory. 3-7 business day delivery with full tracking.',
   alternates: { canonical: 'https://royalkingseeds.au/shipping' },
 };
 
@@ -11,46 +11,46 @@ export default function ShippingPage() {
   return (
     <div className="max-w-[1280px] mx-auto px-4 sm:px-6 py-12">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl text-[#275C53] mb-4" style={{ fontFamily: 'var(--font-patua)' }}>Shipping &amp; Delivery</h1>
-        <p className="text-[#192026]/70 mb-10">We ship cannabis seeds discreetly to all Australian states and territories. Here&apos;s everything you need to know about our shipping process.</p>
+        <h1 className="text-3xl text-[#275C53] mb-4" style={{ fontFamily: 'var(--font-patua)' }}>Delivery &amp; Shipping</h1>
+        <p className="text-[#192026]/70 mb-10">Every order is dispatched with care via Australia Post. Below you will find full details on our delivery process, from checkout to your doorstep.</p>
 
         <div className="space-y-8">
           <div className="bg-white rounded-2xl p-6 border border-[#275C53]/5">
-            <h2 className="text-lg text-[#275C53] font-semibold mb-3">Shipping Rates</h2>
+            <h2 className="text-lg text-[#275C53] font-semibold mb-3">How Tracking Works</h2>
+            <p className="text-sm text-[#192026]/70 leading-relaxed">
+              A tracking reference is generated for every order and sent to your email once your parcel is dispatched. You can monitor its journey through the Australia Post tracking portal — from our dispatch centre right through to delivery at your address. If anything seems amiss with your shipment, our support team is ready to help.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 border border-[#275C53]/5">
+            <h2 className="text-lg text-[#275C53] font-semibold mb-3">Delivery Costs &amp; Timeframes</h2>
             <div className="space-y-2 text-sm text-[#192026]/70">
-              <p><strong className="text-[#275C53]">Free Shipping:</strong> Orders over $150 AUD</p>
-              <p><strong className="text-[#275C53]">Standard Shipping:</strong> $9.99 flat rate for orders under $150</p>
-              <p><strong className="text-[#275C53]">Processing Time:</strong> 1-2 business days</p>
-              <p><strong className="text-[#275C53]">Delivery Time:</strong> 3-7 business days via Australia Post</p>
+              <p><strong className="text-[#275C53]">Complimentary Delivery:</strong> Automatically applied to orders of $150 AUD or more</p>
+              <p><strong className="text-[#275C53]">Flat-Rate Postage:</strong> $9.99 for all orders under $150 AUD</p>
+              <p><strong className="text-[#275C53]">Dispatch Window:</strong> 1-2 business days after order confirmation</p>
+              <p><strong className="text-[#275C53]">Estimated Transit:</strong> 3-7 business days via Australia Post (metro areas typically faster)</p>
             </div>
           </div>
 
           <div className="bg-white rounded-2xl p-6 border border-[#275C53]/5">
-            <h2 className="text-lg text-[#275C53] font-semibold mb-3">Discreet Packaging</h2>
+            <h2 className="text-lg text-[#275C53] font-semibold mb-3">Our Approach to Discreet Packaging</h2>
             <p className="text-sm text-[#192026]/70 leading-relaxed">
-              Every order ships in plain, unmarked packaging. There is absolutely no mention of cannabis, seeds, or Royal King Seeds on the exterior of any package. Your privacy is our priority. Seeds are packaged in protective containers inside to ensure they arrive in perfect condition.
+              Protecting your privacy is fundamental to how we operate. Every parcel leaves our facility in plain, unbranded packaging — no logos, no product names, and absolutely no indication of what is inside. Internally, seeds are housed in crush-resistant containers to ensure they arrive in pristine condition regardless of how many hands the parcel passes through.
             </p>
           </div>
 
           <div className="bg-white rounded-2xl p-6 border border-[#275C53]/5">
-            <h2 className="text-lg text-[#275C53] font-semibold mb-3">Order Tracking</h2>
+            <h2 className="text-lg text-[#275C53] font-semibold mb-3">Seed Replacement &amp; Germination Promise</h2>
             <p className="text-sm text-[#192026]/70 leading-relaxed">
-              Every order includes a tracking number sent to your email. You can monitor your delivery status via Australia Post tracking from our warehouse to your doorstep. If you have any concerns about your shipment, contact our support team.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 border border-[#275C53]/5">
-            <h2 className="text-lg text-[#275C53] font-semibold mb-3">Returns &amp; Germination Guarantee</h2>
-            <p className="text-sm text-[#192026]/70 leading-relaxed">
-              Due to the nature of our products, we cannot accept returns on opened seed packs. However, our germination guarantee covers seeds that fail to germinate when following our recommended method. Contact us within 30 days of delivery with documentation for a replacement.
+              Opened seed packs cannot be returned due to the perishable nature of seeds. That said, our germination promise means you are covered: if your seeds fail to sprout using our recommended method, contact us within 30 days of delivery with supporting photos and we will send replacements at no charge.
             </p>
           </div>
         </div>
 
         <div className="mt-8 flex flex-wrap gap-2">
           <Link href="/faq" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">FAQ</Link>
-          <Link href="/contact" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Contact Us</Link>
-          <Link href="/product-category/shop-all-cannabis-seeds" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Shop Seeds</Link>
+          <Link href="/contact" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Get in Touch</Link>
+          <Link href="/product-category/shop-all-cannabis-seeds" className="px-3 py-1.5 bg-[#F5F0EA] rounded-full text-[12px] text-[#275C53] hover:bg-[#275C53] hover:text-white transition-colors">Browse Seeds</Link>
         </div>
       </div>
     </div>
