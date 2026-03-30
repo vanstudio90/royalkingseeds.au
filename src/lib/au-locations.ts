@@ -395,9 +395,9 @@ function generateStatePage(stateKey: string): LocationPage | null {
   for (let i = 0; i < strains.length; i++) {
     const strain = strains[i];
     const desc = pick(slug + strain, [
-      `A proven performer in ${state.climate} conditions. Finishes reliably within the ${state.frostFreeDays}-day outdoor window and handles ${state.name}'s typical growing challenges.`,
-      `Well-suited for ${state.name} growers — the genetics handle ${state.climate === 'tropical' || state.climate === 'subtropical' || state.climate === 'monsoonal' ? 'high humidity without dense bud rot issues' : state.climate === 'oceanic' ? 'cool nights and shorter growing windows without stalling' : state.climate === 'arid' || state.climate === 'semi-arid' ? 'heat stress and low water availability' : 'the temperature range and seasonal shifts typical of the region'}.`,
-      `Consistent results indoors and out in ${state.abbreviation}. The terpene profile develops fully when given ${state.climate === 'oceanic' || state.climate === 'temperate' ? 'the cool night temperatures' : state.climate === 'arid' || state.climate === 'semi-arid' ? 'the intense UV exposure' : 'adequate flowering time'} that ${state.name} provides.`,
+      `Tested across ${state.climate} Australian climates and consistently delivers within the ${state.frostFreeDays}-day outdoor window. Handles the local challenges ${state.abbreviation} growers encounter without requiring heroic intervention.`,
+      `${state.name} growers reach for this one because the genetics manage ${state.climate === 'tropical' || state.climate === 'subtropical' || state.climate === 'monsoonal' ? 'wet-season humidity and dense bud structures without succumbing to botrytis' : state.climate === 'oceanic' ? 'cool maritime temperatures and abbreviated growing seasons without stalling' : state.climate === 'arid' || state.climate === 'semi-arid' ? 'blistering heat and limited water availability' : 'the seasonal swings typical of this part of Australia'}.`,
+      `Delivers reliably across both indoor and outdoor setups in ${state.abbreviation}. Terpene expression peaks when exposed to ${state.climate === 'oceanic' || state.climate === 'temperate' ? 'the cool overnight drops that characterise late-season growing here' : state.climate === 'arid' || state.climate === 'semi-arid' ? 'the punishing UV exposure that central and western Australia delivers' : 'the full flowering period that ' + state.name + '\'s season affords'}.`,
     ], 'sdesc' + i);
     strainsHtml += `<h3>${i + 1}. ${strain}</h3>\n<p>${desc}</p>\n`;
   }
@@ -423,25 +423,25 @@ function generateStatePage(stateKey: string): LocationPage | null {
 
   // Indoor vs outdoor section
   const indoorOutdoorSection = pick(slug, [
-    `<h2>Indoor vs Outdoor Growing in ${state.name}</h2>
+    `<h2>Should You Grow Indoors or Outdoors in ${state.name}?</h2>
 <p>${state.indoorOutdoor}</p>
-<p><strong>Indoor advantages in ${state.abbreviation}:</strong> Climate control eliminates the ${state.climate === 'tropical' || state.climate === 'subtropical' || state.climate === 'monsoonal' ? 'humidity and mould risk that define outdoor growing in this region' : state.climate === 'oceanic' || state.climate === 'temperate' ? 'short season that limits strain selection outdoors' : state.climate === 'arid' || state.climate === 'semi-arid' ? 'extreme heat that stalls plant growth above 35°C' : 'weather variability that can damage outdoor crops'}. Year-round growing means 4–6 harvests per year with ${CL.auto} or 3–4 with photoperiod ${CL.fem}.</p>
-<p><strong>Outdoor advantages in ${state.abbreviation}:</strong> Natural sunlight delivers the full spectrum that no grow light perfectly replicates. ${state.frostFreeDays > 300 ? `With ${state.frostFreeDays} frost-free days, ${state.name} growers can finish even long-flowering sativas outdoors.` : state.frostFreeDays > 230 ? `The ${state.frostFreeDays}-day frost-free window accommodates most indica-dominant hybrids and autoflowers.` : `The ${state.frostFreeDays}-day frost-free season limits outdoor options to autoflowers and fast-finishing indicas.`}</p>`,
-    `<h2>Growing Environment: Indoor or Outdoor in ${state.name}?</h2>
+<p><strong>The case for indoor cultivation in ${state.abbreviation}:</strong> A controlled environment removes ${state.climate === 'tropical' || state.climate === 'subtropical' || state.climate === 'monsoonal' ? 'the wet-season humidity and mould pressure that plague outdoor flowering in this part of Australia' : state.climate === 'oceanic' || state.climate === 'temperate' ? 'the compressed season that restricts outdoor strain selection to fast-finishing genetics' : state.climate === 'arid' || state.climate === 'semi-arid' ? 'the extreme summer heat that shuts down plant metabolism above 35°C' : 'the unpredictable weather swings that threaten outdoor crops'} from the equation entirely. Indoor growers in ${state.abbreviation} can turn over 4–6 autoflower harvests or 3–4 photoperiod cycles per year.</p>
+<p><strong>The case for outdoor cultivation in ${state.abbreviation}:</strong> Nothing matches the spectral completeness of direct sunlight. ${state.frostFreeDays > 300 ? `At ${state.frostFreeDays} frost-free days, ${state.name} has the season length to finish even extended-flowering sativa genetics in the open air.` : state.frostFreeDays > 230 ? `A ${state.frostFreeDays}-day frost-free window gives ${state.name} growers enough time for most indica-dominant hybrids and all autoflowers to finish outdoors.` : `With only ${state.frostFreeDays} frost-free days, outdoor options in ${state.name} narrow to autoflowers and the fastest-finishing indica genetics.`}</p>`,
+    `<h2>Choosing Your Growing Environment in ${state.name}</h2>
 <p>${state.indoorOutdoor}</p>
-<p>The ${state.climate} climate of ${state.name} shapes this decision. ${state.frostFreeDays > 300 ? 'The long season opens outdoor growing to a wide range of genetics — from fast autoflowers to 12-week sativas.' : state.frostFreeDays > 230 ? 'The moderate season supports outdoor grows for growers who choose their genetics carefully and start seeds indoors before transplanting.' : 'The shorter frost-free window makes indoor growing the default for most growers. Autoflowers are the outdoor exception.'}</p>
-<p>For indoor setups in ${state.name}, our ${BL.lights} covers LED vs HPS selection and the PAR targets that drive yield. Outdoor growers should review our ${CL.outdoor} catalogue for genetics bred to handle real-world conditions.</p>`,
+<p>${state.name}'s ${state.climate} climate is the deciding variable. ${state.frostFreeDays > 300 ? 'The generous season means outdoor growers can run the full genetic range — rapid autoflowers through to twelve-week sativas — without racing the calendar.' : state.frostFreeDays > 230 ? 'The moderate frost-free stretch supports outdoor cultivation for growers who select their genetics deliberately and give seedlings a head start under cover before transplanting.' : 'The abbreviated outdoor window steers most growers indoors by default. Autoflowering genetics remain the practical outdoor exception.'}</p>
+<p>Indoor cultivators in ${state.name} can explore our ${BL.lights} for fixture comparisons and target PAR levels. Outdoor growers should browse the ${CL.outdoor} catalogue for genetics bred to handle the realities of Australian weather.</p>`,
   ], 'indoor-outdoor');
 
   // FAQ section
   const faqs = [
-    { q: `Can I legally grow cannabis in ${state.name}?`, a: state.legalNote },
-    { q: `What are the best cannabis seeds for ${state.name}'s climate?`, a: `${state.name}'s ${state.climate} climate (${state.frostFreeDays} frost-free days) favours ${state.topStrainTypes.join(', ')}. Our top recommendations are ${strains.slice(0, 3).join(', ')} — all selected for performance in ${state.name}'s specific conditions.` },
-    { q: `When should I start growing cannabis in ${state.name}?`, a: `${state.growingSeason} For indoor grows, start any time — climate control makes season irrelevant. For outdoor grows, start seeds indoors in September and transplant after the last frost passes (typically October in most of ${state.name}).` },
-    { q: `Do you ship cannabis seeds to ${state.name}?`, a: `Yes. Royal King Seeds ships to ${state.name} with discreet, tracked packaging. Delivery typically takes 7–14 business days. Seeds ship in unmarked, crush-proof containers.` },
+    { q: `What are the cannabis cultivation laws in ${state.name}?`, a: state.legalNote },
+    { q: `Which seeds perform best in ${state.name}'s growing conditions?`, a: `The ${state.climate} climate and ${state.frostFreeDays}-day frost-free window favour ${state.topStrainTypes.join(', ')}. Based on regional performance data, we recommend ${strains.slice(0, 3).join(', ')} as starting points for ${state.abbreviation} growers.` },
+    { q: `What is the ideal planting timeline for ${state.name}?`, a: `${state.growingSeason} Indoor setups operate independently of the calendar. Outdoor growers should germinate seeds under cover in September and move transplants outside once frost risk clears — usually October across most of ${state.name}.` },
+    { q: `Can Royal King Seeds deliver to ${state.name} addresses?`, a: `Absolutely. We ship to all ${state.name} postcodes with tracked, discreet packaging. Expect delivery within 7–14 business days. Every parcel ships in plain, crush-proof containers with no external branding.` },
     pick(slug, [
-      { q: `Is it better to grow indoors or outdoors in ${state.name}?`, a: state.indoorOutdoor },
-      { q: `What is the best autoflower strain for ${state.name}?`, a: `For ${state.name}'s ${state.climate} conditions, ${strains[0]} Auto and ${strains[1]} Auto are strong choices. Autoflowers finish in 8–12 weeks regardless of light schedule, which is especially valuable ${state.frostFreeDays < 230 ? `given ${state.name}'s shorter frost-free window.` : `for growers wanting multiple harvests per season in ${state.name}.`}` },
+      { q: `Should ${state.name} growers prioritise indoor or outdoor setups?`, a: state.indoorOutdoor },
+      { q: `Which autoflower variety suits ${state.name} best?`, a: `Given the ${state.climate} conditions in ${state.name}, ${strains[0]} Auto and ${strains[1]} Auto stand out. Autoflowers wrap up in 8–12 weeks independent of photoperiod, which ${state.frostFreeDays < 230 ? `matters especially in ${state.name} where the frost-free window is tighter than in northern states.` : `lets ${state.name} growers stack multiple outdoor harvests within a single season.`}` },
     ], 'faq-extra'),
   ];
 
@@ -528,9 +528,9 @@ function generateCityPage(stateKey: string, citySlug: string): LocationPage | nu
   for (let i = 0; i < strains.length; i++) {
     const strain = strains[i];
     const desc = pick(slug + strain, [
-      `Handles ${city.name}'s local conditions well — ${city.note ? city.note.toLowerCase() + '.' : `the ${state.climate} climate zone typical of ${state.name}.`}`,
-      `A reliable choice for ${city.name} growers who want ${i === 0 ? 'a proven performer' : i === 1 ? 'variety in their garden' : 'a backup strain that delivers consistently'}.`,
-      `Performs in the ${state.climate} conditions around ${city.name}. ${state.frostFreeDays > 280 ? 'The long season lets this strain fully mature outdoors.' : 'Start indoors and transplant after last frost for best results.'}`,
+      `Suited to ${city.name}'s local growing environment — ${city.note ? city.note.toLowerCase() + ' creates conditions this strain thrives in.' : `the ${state.climate} pattern across ${state.name} aligns well with this cultivar's requirements.`}`,
+      `${city.name} growers appreciate this strain for ${i === 0 ? 'its track record of delivering solid results locally' : i === 1 ? 'adding genetic diversity to a single-strain garden' : 'serving as a dependable secondary option that rarely disappoints'}.`,
+      `Adapted to the ${state.climate} environment around ${city.name}. ${state.frostFreeDays > 280 ? 'The extended warm season allows this genetics to reach full maturity outdoors without time pressure.' : 'Giving seedlings a head start indoors before moving them outside after the last frost delivers the strongest outcomes.'}`,
     ], 'cdesc' + i);
     strainsHtml += `<h3>${i + 1}. ${strain}</h3>\n<p>${desc}</p>\n`;
   }
@@ -538,54 +538,54 @@ function generateCityPage(stateKey: string, citySlug: string): LocationPage | nu
   // Nearby cities
   let nearbyCitiesHtml = '';
   if (otherCities.length > 0) {
-    nearbyCitiesHtml = '<h2>More Cannabis Seed Guides Near ' + city.name + '</h2>\n<ul>\n';
+    nearbyCitiesHtml = `<h2>Nearby ${state.abbreviation} City Guides</h2>\n<ul>\n`;
     for (const c of otherCities) {
-      nearbyCitiesHtml += `<li>${a(`Buy Cannabis Seeds in ${c.name}, ${state.abbreviation}`, `/seeds/australia/${state.slug}/${c.slug}`)}</li>\n`;
+      nearbyCitiesHtml += `<li>${a(`Cannabis Seeds in ${c.name}, ${state.abbreviation}`, `/seeds/australia/${state.slug}/${c.slug}`)}</li>\n`;
     }
     nearbyCitiesHtml += '</ul>';
   }
 
   // Pick a blog ref
   const blogRef = pick(slug, [
-    `For step-by-step starting advice, our ${BL.germ} covers methods that produce the most consistent results.`,
-    `Managing your grow environment matters more than strain hype. Our ${BL.lights} and ${BL.vpd} cover the fundamentals.`,
-    `Autoflowers simplify growing for ${city.name} residents — our ${BL.autoGuide} covers the specific techniques.`,
-    `New to growing? Our ${BL.nutrients} and ${BL.germ} cover the fundamentals every ${city.name} grower should know.`,
+    `Starting from scratch? Our ${BL.germ} details the germination techniques with the highest success rates for Australian conditions.`,
+    `Environment control outweighs strain selection for final quality. Our ${BL.lights} and ${BL.vpd} cover the fundamentals that ${city.name} growers should dial in first.`,
+    `Autoflowering genetics remove much of the complexity for ${city.name} cultivators — our ${BL.autoGuide} explains the specific management approaches.`,
+    `Building your first grow? The ${BL.nutrients} and ${BL.germ} cover the foundational knowledge every ${city.name} grower benefits from.`,
   ], 'cityblog');
 
   const content = `
-<h1>Buy Cannabis Seeds in ${city.name}, ${state.name}</h1>
+<h1>Cannabis Seeds Delivered to ${city.name}, ${state.name}</h1>
 
 <p>${opener(city, state)}</p>
 
-<p>Royal King Seeds ships directly to ${city.name} with discreet, tracked packaging. We stock ${CL.fem}, ${CL.auto}, ${CL.ind}, ${CL.sat}, and ${CL.cbd} — all available for delivery to ${state.abbreviation} addresses.</p>
+<p>Royal King Seeds delivers to ${city.name} in discreet, tracked packaging. Our catalogue includes ${CL.fem}, ${CL.auto}, ${CL.ind}, ${CL.sat}, and ${CL.cbd} — every variety ships to ${state.abbreviation} addresses.</p>
 
-<h2>Local Growing Conditions in ${city.name}</h2>
-<p>${city.note || `${city.name} falls within ${state.name}'s ${state.climate} climate zone.`} ${state.name} averages ${state.frostFreeDays} frost-free days, though local conditions in the ${city.name} area may vary by 10–20 days depending on elevation and urban heat effects.</p>
+<h2>${city.name} Growing Environment</h2>
+<p>${city.note || `${city.name} shares ${state.name}'s broader ${state.climate} climate pattern.`} Across ${state.name}, the frost-free average sits around ${state.frostFreeDays} days, though microclimate variation in the ${city.name} area can shift that number by 10–20 days based on elevation, coastal proximity, and urban heat island effects.</p>
 <p>${state.indoorOutdoor}</p>
 
-<h2>Top 3 Strains for ${city.name} Growers</h2>
+<h2>Recommended Strains for ${city.name}</h2>
 ${strainsHtml}
-<p>See more options in our ${CL.all} or browse ${CL.best} that ${state.abbreviation} customers order most frequently.</p>
+<p>Explore the full range in our ${CL.all}, or see which genetics ${state.abbreviation} growers order most in our ${CL.best} section.</p>
 
-<h2>Cannabis Laws in ${city.name}, ${state.name}</h2>
+<h2>Legal Framework in ${city.name}, ${state.name}</h2>
 <p>${state.legalNote}</p>
-<p>Cannabis seeds are sold as adult novelty souvenirs and collector genetics. ${a(`Read the full ${state.name} legal guide`, `/seeds/australia/${state.slug}/is-marijuana-legal`)}.</p>
+<p>Cannabis seeds are available as adult novelty souvenirs and collector genetics. ${a(`Full ${state.name} legal breakdown`, `/seeds/australia/${state.slug}/is-marijuana-legal`)}.</p>
 
-<h2>Growing Resources</h2>
+<h2>Guides &amp; Resources</h2>
 <p>${blogRef}</p>
 
 ${nearbyCitiesHtml}
 
-<p>${a(`Buy Cannabis Seeds in ${state.name}`, `/seeds/australia/${state.slug}`)} | ${hubLink()} | ${a('Shop All Seeds', '/product-category/shop-all-cannabis-seeds')}</p>
+<p>${a(`All ${state.name} Seeds`, `/seeds/australia/${state.slug}`)} | ${hubLink()} | ${a('Browse Full Catalogue', '/product-category/shop-all-cannabis-seeds')}</p>
 `;
 
   return {
     slug: `${state.slug}/${city.slug}`,
-    title: `Buy Cannabis Seeds in ${city.name}, ${state.name}`,
+    title: `Cannabis Seeds in ${city.name}, ${state.name}`,
     content,
-    metaTitle: `Buy Cannabis Seeds in ${city.name}, ${state.abbreviation} | Royal King Seeds`,
-    metaDescription: `Cannabis seeds shipped to ${city.name}, ${state.name}. ${strains.slice(0, 2).join(' and ')} recommended for local growing conditions. Discreet delivery to ${state.abbreviation}.`,
+    metaTitle: `Cannabis Seeds ${city.name}, ${state.abbreviation} | Discreet Delivery | Royal King Seeds`,
+    metaDescription: `Order cannabis seeds to ${city.name}, ${state.name}. ${strains.slice(0, 2).join(' and ')} matched to local conditions. Tracked, discreet ${state.abbreviation} shipping.`,
     pageType: 'city',
     state: state.name,
     city: city.name,
