@@ -260,19 +260,19 @@ const CLIMATE_DESCRIPTIONS: Record<ClimateZone, string> = {
 
 // ── Opening templates — varied by hash ──
 const STATE_OPENERS: ((state: StateInfo) => string)[] = [
-  (s) => `${s.name} offers ${s.frostFreeDays} frost-free days for most growers — and those days define which genetics finish outdoors and which need the controlled environment of an indoor setup. The Southern Hemisphere season means outdoor planting starts in October and harvest wraps by April.`,
-  (s) => `Growing cannabis in ${s.name} means working with a ${s.climate} climate where ${s.growingSeason}`,
-  (s) => `The ${s.frostFreeDays}-day frost-free window in ${s.name} sets the boundaries for outdoor growers. ${s.indoorOutdoor}`,
-  (s) => `${s.name} growers face a specific set of conditions: ${CLIMATE_DESCRIPTIONS[s.climate].toLowerCase()} That shapes everything from strain selection to harvest timing.`,
-  (s) => `Cannabis cultivation in ${s.name} follows the rhythm of a ${s.climate} climate. ${s.growingSeason} These are the parameters that determine what you can grow and how you should grow it.`,
+  (s) => `With ${s.frostFreeDays} frost-free days on the calendar, ${s.name} gives outdoor cultivators a defined window to work within — and that window dictates everything from strain choice to planting date. Remember, Australian seasons flip the Northern Hemisphere script: spring arrives in September, summer peaks in January, and autumn harvests roll through March and April.`,
+  (s) => `The ${s.climate} conditions across ${s.name} create a specific set of opportunities and constraints for cannabis growers. ${s.growingSeason}`,
+  (s) => `Outdoor growers in ${s.name} plan around a ${s.frostFreeDays}-day frost-free stretch that determines which genetics can mature before cooler weather returns. ${s.indoorOutdoor}`,
+  (s) => `What defines growing in ${s.name}? ${CLIMATE_DESCRIPTIONS[s.climate].toLowerCase()} Understanding these realities is the first step toward choosing genetics that actually perform in your garden.`,
+  (s) => `${s.name} presents a ${s.climate} growing environment shaped by ${s.frostFreeDays} frost-free days and distinctly Southern Hemisphere seasons. ${s.growingSeason} Matching your seed selection to these local realities separates a productive harvest from a disappointing one.`,
 ];
 
 const CITY_OPENERS: ((city: CityInfo, state: StateInfo) => string)[] = [
-  (c, s) => `${c.name} growers operate in ${s.name}'s ${s.climate} climate zone${c.note ? ` — specifically, ${c.note.toLowerCase()}` : ''}. That local microclimate shapes which seeds perform best and how you should set up your grow.`,
-  (c, s) => `Buying cannabis seeds in ${c.name}, ${s.abbreviation} means choosing genetics that handle the local conditions${c.note ? `: ${c.note.toLowerCase()}` : ` typical of ${s.name}'s ${s.climate} zone`}.`,
-  (c, s) => `${c.name} sits in ${s.name}'s ${REGIONS[s.region].toLowerCase()} region${c.note ? `, where ${c.note.toLowerCase()}` : ''}. Understanding these local conditions is the difference between a successful harvest and a disappointing one.`,
-  (c, s) => `For ${c.name} growers looking for cannabis seeds, the local growing environment matters more than most online guides acknowledge${c.note ? `. ${c.note}.` : `.`} Here is what you need to know.`,
-  (c, s) => `Cannabis seed selection for ${c.name}, ${s.name} comes down to matching genetics to your specific conditions. ${c.note || `The ${s.climate} climate of ${s.name} sets the baseline.`}`,
+  (c, s) => `${c.name} sits within ${s.name}'s broader ${s.climate} zone, but every city has its own microclimate quirks${c.note ? ` — here, ${c.note.toLowerCase()}` : ''}. Those local details matter when picking seeds.`,
+  (c, s) => `Selecting cannabis seeds for ${c.name}, ${s.abbreviation} starts with acknowledging what your local environment actually delivers${c.note ? `: ${c.note.toLowerCase()}` : ` — the ${s.climate} conditions characteristic of ${s.name}`}.`,
+  (c, s) => `Positioned in ${s.name}'s ${REGIONS[s.region].toLowerCase()} corridor${c.note ? `, ${c.name} deals with ${c.note.toLowerCase()}` : `, ${c.name} inherits the regional ${s.climate} pattern`}. Seed choices that ignore these realities underperform.`,
+  (c, s) => `Most generic growing guides gloss over city-level differences, but ${c.name} growers know their conditions have real impact on results${c.note ? `. ${c.note}.` : `.`} Here is what matters for your seed selection.`,
+  (c, s) => `Matching seeds to ${c.name}'s specific environment is where good harvests start. ${c.note || `The ${s.climate} baseline of ${s.name} applies, with local variation worth accounting for.`}`,
 ];
 
 // ── Hub Page Generator ──
@@ -378,16 +378,16 @@ function generateStatePage(stateKey: string): LocationPage | null {
 
   // Pick blog references deterministically
   const blogRefs = pickN(slug, [
-    `Our ${BL.germ} covers the paper towel method and transplanting steps for maximum success rates.`,
-    `Managing nutrients through each growth stage prevents the most common issues — see our ${BL.nutrients} for diagnostic charts.`,
-    `Lighting decisions shape everything from energy cost to bud density. Our ${BL.lights} breaks down the options.`,
-    `The ${BL.autoGuide} covers techniques specific to automatic genetics that apply directly to ${state.name}'s growing conditions.`,
-    `Pest pressure varies by season and region. Our ${BL.pest} identifies the threats most relevant to ${REGIONS[state.region].toLowerCase()} growers.`,
-    `Temperature and humidity management through VPD is especially important in ${state.name}'s ${state.climate} climate. Our ${BL.vpd} explains the maths.`,
-    `Knowing when to harvest makes or breaks the final product. Our ${BL.harvest} covers trichome maturity and timing.`,
-    `The flowering stretch can surprise ${state.name} growers working in tight spaces. Our ${BL.flower} explains stage-by-stage management.`,
-    `Canopy management through topping and LST shapes yield distribution. Our ${BL.train} walks through the techniques.`,
-    `Terpene preservation during dry and cure determines flavour quality. Our ${BL.terp} covers the major compounds.`,
+    `Getting seeds off to a strong start is half the battle — our ${BL.germ} walks through each technique with photo references.`,
+    `Leaf discolouration and stunted growth often trace back to nutrient imbalances. Our ${BL.nutrients} provides visual diagnosis charts to help ${state.abbreviation} growers identify and fix issues quickly.`,
+    `Choosing between LED and HPS can feel overwhelming. Our ${BL.lights} compares the technologies head-to-head with efficiency data and cost breakdowns.`,
+    `Running autoflowers in ${state.name}? The ${BL.autoGuide} details the feeding and training nuances that apply specifically to ruderalis-based genetics in ${state.climate} conditions.`,
+    `Seasonal pest cycles in ${state.name}'s ${REGIONS[state.region].toLowerCase()} region bring specific threats. Our ${BL.pest} maps them out with prevention and treatment protocols.`,
+    `VPD management is a lever most ${state.abbreviation} growers underutilise. Our ${BL.vpd} provides the charts and calculations to dial in your environment across the ${state.climate} seasons.`,
+    `Cutting too early costs potency; cutting too late shifts the effect profile toward sedation. Our ${BL.harvest} explains how trichome colour guides the decision.`,
+    `Height management during the bloom stretch trips up plenty of ${state.name} indoor growers. Our ${BL.flower} breaks the process into manageable phases.`,
+    `Redistributing growth energy across the canopy through topping and LST directly increases yield. Our ${BL.train} covers the mechanics step by step.`,
+    `Terpene volatility means post-harvest handling defines flavour quality. Our ${BL.terp} explains which compounds matter and how to preserve them during drying and curing.`,
   ], 3, 'blogrefs');
 
   // Strain recommendations
