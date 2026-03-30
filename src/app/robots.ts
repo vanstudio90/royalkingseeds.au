@@ -1,0 +1,39 @@
+import { MetadataRoute } from 'next';
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+        disallow: ['/futu/', '/api/admin/', '/checkout/', '/account/', '/favorites/'],
+      },
+      // Explicitly allow all major AI crawlers
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'ChatGPT-User', allow: '/' },
+      { userAgent: 'OAI-SearchBot', allow: '/' },
+      { userAgent: 'ClaudeBot', allow: '/' },
+      { userAgent: 'anthropic-ai', allow: '/' },
+      { userAgent: 'PerplexityBot', allow: '/' },
+      { userAgent: 'Applebot-Extended', allow: '/' },
+      { userAgent: 'Google-Extended', allow: '/' },
+      { userAgent: 'GoogleOther', allow: '/' },
+      { userAgent: 'Bytespider', allow: '/' },
+      { userAgent: 'CCBot', allow: '/' },
+      { userAgent: 'cohere-ai', allow: '/' },
+      { userAgent: 'Meta-ExternalAgent', allow: '/' },
+      { userAgent: 'Meta-ExternalFetcher', allow: '/' },
+      { userAgent: 'Amazonbot', allow: '/' },
+      { userAgent: 'YouBot', allow: '/' },
+      { userAgent: 'Diffbot', allow: '/' },
+      { userAgent: 'ImagesiftBot', allow: '/' },
+      { userAgent: 'Timpibot', allow: '/' },
+      { userAgent: 'PetalBot', allow: '/' },
+      { userAgent: 'Seekr', allow: '/' },
+      { userAgent: 'FriendlyCrawler', allow: '/' },
+      { userAgent: 'Kangaroo Bot', allow: '/' },
+      { userAgent: 'iaskspider', allow: '/' },
+    ],
+    sitemap: 'https://royalkingseeds.au/sitemap_index.xml',
+  };
+}

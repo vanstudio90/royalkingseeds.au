@@ -1,0 +1,60 @@
+# Royal King Seeds Australia
+
+> Royal King Seeds is Australia's trusted online cannabis seed bank offering 1,200+ feminised, autoflower, CBD, and high-THC strains with discreet shipping across all Australian states and territories. 92% germination guarantee.
+
+For a more detailed version of this file, see: https://royalkingseeds.au/llms-full.txt
+
+## Key Information
+
+- Online-only seed bank (no physical storefront)
+- Ships domestically via Australia Post — discreet packaging
+- Payment: Visa, Mastercard, cryptocurrency
+- Germination guarantee on all orders
+- Currency: AUD (Australian Dollars)
+- Support: support@royalkingseeds.au
+
+## Product Categories
+
+- [All Cannabis Seeds](https://royalkingseeds.au/product-category/shop-all-cannabis-seeds): Full catalogue of 1,200+ strains
+- [Feminised Seeds](https://royalkingseeds.au/product-category/feminized-seeds): 99.9% female plants, photoperiod
+- [Autoflower Seeds](https://royalkingseeds.au/product-category/autoflowering-seeds): 8-10 week seed-to-harvest, beginner-friendly
+- [Indica Seeds](https://royalkingseeds.au/product-category/indica-seeds): Relaxing body effects, compact plants
+- [Sativa Seeds](https://royalkingseeds.au/product-category/sativa-seeds): Energising cerebral effects, taller plants
+- [Hybrid Seeds](https://royalkingseeds.au/product-category/hybrid): Balanced indica/sativa genetics
+- [CBD Seeds](https://royalkingseeds.au/product-category/cbd-strains): High-CBD, low-THC therapeutic strains
+- [High THC Seeds](https://royalkingseeds.au/product-category/high-tch-seeds): 20%+ THC potent strains
+- [Mix Packs](https://royalkingseeds.au/product-category/mix-packs): Multi-strain variety bundles
+
+## Location Pages
+
+- [Buy Cannabis Seeds in Australia](https://royalkingseeds.au/seeds/australia): Hub page with all states and territories
+- [New South Wales](https://royalkingseeds.au/seeds/australia/new-south-wales): Temperate to subtropical growing
+- [Victoria](https://royalkingseeds.au/seeds/australia/victoria): Cool temperate climate
+- [Queensland](https://royalkingseeds.au/seeds/australia/queensland): Subtropical to tropical growing
+- [Western Australia](https://royalkingseeds.au/seeds/australia/western-australia): Mediterranean to arid climate
+- [South Australia](https://royalkingseeds.au/seeds/australia/south-australia): Mediterranean climate growing
+
+## Growing Guides
+
+- [Autoflower Growing Guide](https://royalkingseeds.au/blog/autoflower-cannabis-seeds-and-growing-guide): Complete guide to autoflowering genetics
+- [Cannabis Nutrient Guide](https://royalkingseeds.au/blog/cannabis-nutrient-deficiencies): Macro/micronutrient function and deficiency diagnosis
+- [Germination Guide](https://royalkingseeds.au/blog/autoflowering-seed-germination-guide): Paper towel method step-by-step
+- [Grow Light Guide](https://royalkingseeds.au/blog/cannabis-growing-lights-and-phases): LED vs HPS, PAR targets, light schedules
+- [Pest Management](https://royalkingseeds.au/blog/cannabis-pest-management): IPM approaches for Australian growers
+- [VPD and Humidity Control](https://royalkingseeds.au/blog/vpd-and-humidity-control-in-cannabis-cultivation): Temperature-humidity interaction
+- [Trichome and Harvest Guide](https://royalkingseeds.au/blog/cannabis-trichomes-and-harvesting): When to harvest for peak potency
+- [Pruning and Training](https://royalkingseeds.au/blog/cannabis-plant-pruning-and-topping): Topping, LST, SCROG techniques
+
+## Policies
+
+- [FAQ](https://royalkingseeds.au/faq): Common questions about ordering, growing, and shipping
+- [Shipping Info](https://royalkingseeds.au/shipping): Delivery times, tracking, discreet packaging
+- [Privacy Policy](https://royalkingseeds.au/privacy): Data handling and customer privacy
+- [Terms of Service](https://royalkingseeds.au/terms): Purchase terms and conditions
+- [Refund & Returns](https://royalkingseeds.au/refund-returns): Return policy and germination guarantee
+
+## Optional
+
+- [Blog Index](https://royalkingseeds.au/blog): Cannabis cultivation articles, strain reviews, and growing science
+- [Sitemap](https://royalkingseeds.au/sitemap_index.xml): Full sitemap index with 5 sub-sitemaps
+- [Contact](https://royalkingseeds.au/contact): Customer support form
